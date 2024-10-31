@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Tom Cantellow</title>
+    <meta name="Tom Cantellow" content="Tom Cantellow's professional portfolio">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="assets/styles.css"> <!-- Link to external stylesheet -->
+    <script src="assets/script.js" defer></script> <!-- Link to external script -->
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+        // Function to load the header
+        function loadHeader() {
+            fetch('assets/header.html') // Fetch the header HTML
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data; // Insert header into the placeholder
+                })
+                .catch(error => console.error('Error loading header:', error));
+        }
+
+        // Load the header when the page loads
+        window.onload = loadHeader;
+    </script>
+
+       
+        <!-- Profile Section -->
+        <section class="profile">
+            <img src="assets/images/cantellow.png" alt="Photo of Tom Cantellow">
+            <div class="profile-info">
+                <h2>Tom Cantellow</h2>
+                <p class="subheading">Quantitative Human Geographer and Political Economist</p>
+                <p class="keywords" style="display: none;"> 
+                    <!-- Keywords list remains hidden -->
+                </p>
+            </div>
+        </section>
+        
+        
+        <!-- Introduction Section -->
+        <section class="intro">
+            <p>
+                I’m a human geographer and social researcher seeking to understand the complex issues that shape the politics and economy of Britain. I aim to provide insights for a diverse audience of researchers, policymakers, public stakeholders, and students.
+            </p>
+            <p>
+                My work spans a range of themes, from elections and housing to inequality and energy efficiency, with a focus on spatial analysis and quantitative methodologies.
+            </p>
+            <p>
+                In 2024, I submitted my PhD in Human Geography at the <a href="https://research-information.bris.ac.uk/en/persons/tom-cantellowUniversity of Bristol" target="_blank">University of Bristol</a>, and I've also worked with local and national government and think tanks. Throughout my career, I've developed expertise in advanced quantitative techniques, GIS, econometrics, policy analysis, and teaching and communication. You can see some of my work under the <a href="projects.html" target="_blank"><strong>Projects</strong></a> section of this site. 
+            </p>
+            <p>
+                I grew up on the <a href="https://en.wikipedia.org/wiki/Isle_of_Sheppey" target="_blank">Isle of Sheppey</a>, and I am proudly of <a href="https://en.wikipedia.org/wiki/Boyash" target="_blank">Rudari</a>
+                heritage. I am driven by a commitment to creating a more equal society for all, and am passionate about democratising research by maximising accessibility. I am also highly motivated to widen participation for underrepresented groups at Universities.
+            </p>
+            <p>
+                I am available to consult and collaborate on map production, (spatial) data analysis, survey design, and many other topics. Please <a href="mailto:t.cantellow@bristol.ac.uk">get in touch</a>! I'd love to chat about what you have in mind. 
+            </p>
+        </section>
+
+        <!-- Placeholder for the footer -->
+        <div id="footer-placeholder"></div>
+    </main>
+
+</body>
+</html>
