@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Tom Cantellow</title>
+    <meta name="Software List" content="Recommended software">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="assets/styles.css"> <!-- Link to external stylesheet -->
+    <script src="assets/script.js" defer></script> <!-- Link to external script -->
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+        // Function to load the header
+        function loadHeader() {
+            fetch('assets/header.html') // Fetch the header HTML
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data; // Insert header into the placeholder
+                })
+                .catch(error => console.error('Error loading header:', error));
+        }
+
+        // Load the header when the page loads
+        window.onload = loadHeader;
+    </script>
+
+<body>
+    <h1>Recommended Software</h1>
+    
+    <ul class="software-list">
+        <h2>Research, Mapping, and Data Analysis</h2>
+        <li>
+            <a href="https://posit.co/" target="_blank"><strong>RStudio</strong></a> – How I use R, ideal for statistical computing and graphics.
+        </li>
+        <li>
+            <a href="https://qgis.org/" target="_blank"><strong>QGIS</strong></a> – An open-source Geographic Information System for spatial analysis and mapping. Good for finishing maps before publication.
+        </li>
+        <li>
+            <a href="https://www.zotero.org/" target="_blank"><strong>Zotero</strong></a> – My favourite reference manager. Use with <a href="https://zotfile.com/Zotfile" target="_blank"><strong>Zotfile</strong></a> for syncing and to get around storage limitations.
+        </li>
+        <li>
+            <a href="https://miro.com/" target="_blank"><strong>Miro</strong></a> – An online tool for creating beautiful mindmaps and flowcharts.
+        </li>
+        <li>
+            <a href="https://mycolor.space/" target="_blank"><strong>ColorSpace</strong></a> – An online tool for creating colour palettes.
+        </li>
+
+        <h2>Media Tools</h2>
+        <li>
+            <a href="https://www.getpaint.net/" target="_blank"><strong>Paint.NET</strong></a> – My go to for image maniuplation.
+        </li>
+        <li>
+            <a href="https://www.audacityteam.org/" target="_blank"><strong>Audacity</strong></a> – My go to for audio manipulation.
+        </li>
+        <li>
+            <a href="https://getmusicbee.com/" target="_blank"><strong>MusicBee</strong></a> – How I play my local music files.
+        </li>
+        <li>
+            <a href="https://www.videolan.org/vlc/" target="_blank"><strong>VLC Media Player</strong></a> – How I play my local video files.
+        </li>
+
+        <h2>File Management</h2>
+        <li>
+            <a href="https://freefilesync.org/" target="_blank"><strong>FreeFileSync</strong></a> – Synchronises files and folders across devices. Awesome for keeping work synchronised across multiple filesystem: I use this to keep my work synchronised across my home PC, portable SSD, and my onedrive-linked work laptop.
+        </li>
+        <li>
+            <a href="https://www.veracrypt.fr/" target="_blank"><strong>VeraCrypt</strong></a> – Excellent tool for encryption.
+        </li>
+        <li>
+            <a href="https://www.7-zip.org/" target="_blank"><strong>7-Zip</strong></a> – Compress and uncompress files.
+        </li>
+        <li>
+            <a href="https://calibre-ebook.com/" target="_blank"><strong>Calibre</strong></a> – An e-book manager that organises, converts, and syncs your digital book collection.
+        </li>
+        <li>
+            <a href="https://windirstat.net/" target="_blank"><strong>WinDirStat</strong></a> – Digital storage analyser to help manage storage.
+        </li>
+        <li>
+            <a href="https://www.amd.com/en/technologies/ramdisk" target="_blank"><strong>AMD RAMDisk</strong></a> – Allows system RAM to function as super-fast storage for temporary files. 4GB limit on free version.
+        </li>
+        <li>
+            <a href="https://openhardwaremonitor.org/" target="_blank"><strong>Open Hardware Monitor</strong></a> – Monitors system sensors and shows real-time CPU and GPU data.
+        </li>
+
+        <h2>Internet & Security</h2>
+        <li>
+            <a href="https://www.mozilla.org/en-US/firefox/" target="_blank"><strong>Mozilla Firefox</strong></a> – A secure, privacy-focused web browser with customisation options.
+        </li>
+        <li>
+            <a href="https://bitwarden.com/" target="_blank"><strong>Bitwarden</strong></a> – An open-source password manager for securing credentials.
+        </li>
+        <li>
+            <a href="https://github.com/gorhill/uBlock" target="_blank"><strong>uBlock Origin</strong></a> – A powerful ad-blocker to speed up browsing and improve security.
+        </li>
+        <li>
+            <a href="https://sponsor.ajay.app/" target="_blank"><strong>SponsorBlock</strong></a> – A Firefox extension that skips sponsored segments in videos.
+        </li>
+        <li>
+            <a href="https://swiftselectionsearch.com/" target="_blank"><strong>SwiftSelectionSearch</strong></a> – A Firefox extension allowing quick searches by highlighting text.
+        </li>
+
+        <h2>Tools</h2>
+        <li>
+            <a href="https://outlookgooglecalendarsync.com/" target="_blank"><strong>Outlook Google Calendar Sync</strong></a> – Syncs Google and Outlook calendars.
+        </li>
+        <li>
+            <a href="https://www.revouninstaller.com/" target="_blank"><strong>Revo Uninstaller</strong></a> – Efficiently removes software and cleans up leftover files.
+        </li>
+        <li>
+            <a href="https://www.unifiedremote.com/" target="_blank"><strong>Unified Remote</strong></a> – Turns a smartphone into a PC remote control.
+        </li>
+        <li>
+            <a href="https://12ft.io/" target="_blank"><strong>12ft.io</strong></a> – Paywall bypasser.
+        </li> 
+        <li>
+            <a href="https://www.rainymood.com/" target="_blank"><strong>Rainy Mood</strong></a> – Rain noise generator.
+        </li> 
+        <li>
+            <a href="https://github.com/auctors/free-lunch" target="_blank"><strong>Free Lunch</strong></a> – Awesome list of free software.
+        </li> 
+        
+
+        <h2>Miscellaneous</h2>
+        <li>
+                <a href="https://cycle.travel/" target="_blank"><strong>Cycle.Travel</strong></a> – Bicycle route planner. Finds quiet roads.
+        </li>
+        <li>
+                <a href="https://ninety180.com/" target="_blank"><strong>Ninety 180</strong></a> – Good visualisation tool for post-Brexit Brits. Calculate how many days you can remain in the EU.
+        </li>            
+        </li>
+    </ul>
+</body>
+
+        <div id="footer-placeholder"></div>
+    </main>
+
+</body>
+</html>
