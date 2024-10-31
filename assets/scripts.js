@@ -17,4 +17,17 @@ window.onload = function() {
         localStorage.setItem('theme', 'light');
     }
     updateMode();
-};
+}
+
+// Function to load the header HTML
+function loadHeader() {
+    fetch('assets/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+}
+
+// Call the function to load the header on page load
+window.onload = loadHeader;
+;

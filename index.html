@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Tom Cantellow - Social Researcher & Analyst</title>
+    <meta name="Tom Cantellow" content="Tom Cantellow's professional portfolio">
+    <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="assets/styles.css"> <!-- Link to external stylesheet -->
+    <script src="assets/script.js" defer></script> <!-- Link to external script -->
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main class="content">
+        <!-- Navigation Menu -->
+        <div class="sub-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <!-- Profile Section -->
+        <section class="profile">
+            <img src="assets/photo.png" alt="Photo of Tom Cantellow" style="width: 200px; border-radius: 50%;">
+            <h2>Tom Cantellow</h2>
+            <p>Human Geographer | Social Researcher | Political Economist | Data Analyst</p>
+            <p style="display: none;">
+                <strong>Keywords:</strong> UK Politics, Elections, Housing, Inequality, Energy Efficiency, Spatial Analysis, Populism, Personal Values, Neoliberalism, Social Research, Human Geography, Political Economy, Quantitative Analysis, Spatial Analysis, Data Analysis, Policy Analysis, Economic Inequality, Energy Efficiency, Electoral Politics, Local Government, Community Development, Social Justice, Urban Studies, Rural Studies, Environmental Policy, Climate Change, Sustainable Development, Public Policy, Geographic Information Systems (GIS), Econometrics, Statistical Methods, Social Statistics, Demographic Analysis, Population Studies, Public Health, Welfare Economics, Labour Market, Social Capital, Political Sociology, Civic Engagement, Voter Behavior, Electoral Systems, Neoliberalism, Globalization, Social Movements, Research Methodology, Field Research, Surveys and Polls, Mixed Methods, Case Studies, Community Resilience, Housing Policy, Transportation Policy, Urban Planning, Policy Evaluation, Access to Services, Economic Geography, Environmental Justice, Gender Studies, Ethnicity and Race, Political Ideologies, Social Theory, Risk Assessment, Spatial Inequality, Public Opinion, Research Ethics, Interdisciplinary Studies, Nonprofit Sector, Community Organizing, Grassroots Movements, Health Inequities, Housing Affordability, Sustainable Cities, Behavioral Economics, Digital Economy, Data Visualization, Programming in R, Excel for Analysis, Academic Publishing, Policy Advocacy, Public Sector Reform, Human Rights, Education Policy, Trade Policy, Fiscal Policy, Welfare State, Health Policy, Housing Development, Regional Development, International Relations, Cultural Geography, Urban Sociology, Social Networks, Participatory Research, Community-Based Research, Geographic Policy, Political Risk, Data Literacy, Survey Methodology, Statistical Software, Field Experiments, Longitudinal Studies, Public Administration, Crisis Management, Social Innovation, Knowledge Mobilization, Economic Development, Urban Resilience, Democratic Governance
+            </p>
+        </section>
+        
+        <!-- Introduction Section -->
+        <section class="intro">
+            <p>
+                I’m a human geographer and social researcher dedicated to advancing understanding of the complex issues
+                that shape the politics and economy of British society. My work spans a range of themes, from elections and housing to
+                inequality and energy efficiency, with a focus on spatial analysis and quantitative methodologies. 
+
+                Driven by a commitment to creating a more equal society for all, my projects aim to provide
+                valuable insights for a diverse audience of researchers, policymakers, and public stakeholders.
+            </p>
+            <p>
+                Throughout my career, I've developed expertise in advanced quantitative techniques, GIS, econometrics, R,
+                Excel, and policy analysis, complemented by strong skills in teaching and communication. You can see some of my work under the <strong>Projects</strong> section of this site. 
+            </p>
+        </section>
+
+        <!-- Placeholder for the footer -->
+        <div id="footer-placeholder"></div>
+    </main>
+
+    <script>
+        // Function to load the footer
+        function loadFooter() {
+            fetch('assets/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        }
+
+        // Load the footer when the page loads
+        window.onload = loadFooter;
+    </script>
+</body>
+</html>
