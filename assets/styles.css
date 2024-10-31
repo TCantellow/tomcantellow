@@ -1,0 +1,93 @@
+/* assets/styles.css */
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: justify;
+}
+
+header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between items */
+    margin-left: 10px; /* Space on the left for the title */
+}
+
+h1 {
+    text-align: left;
+    font-size: 2em;
+    margin: 0;
+}
+
+.content {
+    line-height: 1.6;
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sub-nav a {
+    flex: none;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.sub-nav a:hover {
+    border-bottom: 2px solid #000;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Space above the footer */
+    padding: 10px 0; /* Space above and below footer items */
+}
+
+footer nav {
+    display: flex; /* Ensure nav is also flex */
+}
+
+.nav-title span {
+    margin: 0 5px; /* Horizontal spacing for span elements */
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    margin-left: 20px;
+}
+
+/* Dark mode styles */
+.dark body {
+    background-color: #333;
+    color: #ffffff;
+}
