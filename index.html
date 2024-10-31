@@ -11,21 +11,32 @@
     <script src="assets/script.js" defer></script> <!-- Link to external script -->
 </head>
 <body>
-    <div id="header-container"></div>
+    <div id="header-placeholder"></div>
 
-    <main class="content">
-        <!-- Navigation Menu -->
-        <div class="sub-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        
+    <script>
+        // Function to load the header
+        function loadHeader() {
+            fetch('assets/header.html') // Fetch the header HTML
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data; // Insert header into the placeholder
+                })
+                .catch(error => console.error('Error loading header:', error));
+        }
+
+        // Load the header when the page loads
+        window.onload = loadHeader;
+    </script>
+
+       
         <!-- Profile Section -->
         <section class="profile">
-            <img src="assets/photo.png" alt="Photo of Tom Cantellow" style="width: 200px; border-radius: 50%;">
+            <img src="https://research-information.bris.ac.uk/files-asset/361946614/00_Headshot_Close_Smaller.jpg?w=160&f=webp" alt="Photo of Tom Cantellow" style="width: 200px">
             <h2>Tom Cantellow</h2>
             <p>Human Geographer | Social Researcher | Political Economist | Data Analyst</p>
             <p style="display: none;">
@@ -47,25 +58,15 @@
                 Throughout my career, I've developed expertise in advanced quantitative techniques, GIS, econometrics, R,
                 Excel, and policy analysis, complemented by strong skills in teaching and communication. You can see some of my work under the <strong>Projects</strong> section of this site. 
             </p>
+            <p>
+                I'm originally from the <a href="https://en.wikipedia.org/wiki/Isle_of_Sheppey" target="_blank">Isle of Sheppey</a> in North Kent, and I am proudly of <a href="https://en.wikipedia.org/wiki/Boyash" target="_blank">Rudari</a>
+                heritage.
+            </p>
         </section>
 
         <!-- Placeholder for the footer -->
         <div id="footer-placeholder"></div>
     </main>
 
-    <script>
-        // Function to load the footer
-        function loadFooter() {
-            fetch('assets/footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading footer:', error));
-        }
-
-        // Load the footer when the page loads
-        window.onload = loadFooter;
-    </script>
 </body>
 </html>

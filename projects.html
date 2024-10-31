@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Tom Cantellow - Social Researcher & Analyst</title>
+    <meta name="Projects" content="My Projects">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="assets/styles.css"> <!-- Link to external stylesheet -->
+    <script src="assets/script.js" defer></script> <!-- Link to external script -->
+    <style>
+        .project {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            margin-bottom: 10px;
+        }
+
+        .project img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .project-content {
+            max-width: 600px;
+        }
+
+        .project-content h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .project-content p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .project-content a {
+            display: inline-block;
+            margin-top: 5px;
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+
+        .project-content a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+        function loadHeader() {
+            fetch('assets/header.html')
+                .then(response => response.ok ? response.text() : Promise.reject(response.statusText))
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        }
+
+        window.onload = loadHeader;
+    </script>
+
+    <main>
+        <div class="project">
+            <a href="https://tcantellow.github.io/netzeroindex/index.html" target="_blank">
+                <img src="assets/images/netzeroindex.png" alt="Net Zero Vulnerability Index">
+            </a>
+            <div class="project-content">
+                <h2>Net Zero Vulnerability Index</h2>
+                <p>I developed an index to compare the vulnerability of UK places to green-led economic restructuring.</p>
+                <a href="https://www.bristol.ac.uk/policybristol/" target="_blank">Report</a> |
+                <a href="https://tcantellow.github.io/netzeroindex/index.html" target="_blank">Website</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <a href="#" target="_blank">
+                <img src="assets/images/phd.png" alt="PhD Thesis">
+            </a>
+            <div class="project-content">
+                <h2>PhD Thesis</h2>
+                <p>My thesis, <i>The ‘New Divides’ of Neoliberalism</i>, was submitted in September 2024 and is under review. It will be linked here upon publication.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <a href="https://www.bristol.ac.uk/policybristol/policy-engagement-projects/retrofitting-rentals-bristol/" target="_blank">
+                <img src="assets/images/retrofittingrentals.png" alt="Retrofitting Rentals">
+            </a>
+            <div class="project-content">
+                <h2>Retrofitting Rentals</h2>
+                <p>An index to compare the vulnerability of UK places to green-led economic restructuring.</p>
+                <a href="https://www.bristol.ac.uk/policybristol/policy-engagement-projects/retrofitting-rentals-bristol/" target="_blank">Report</a> |
+                <a href="https://uobristol.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=bdc9bdf0ac9a405fb48e926e461679ed" target="_blank">Webmap</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <a href="https://demos.co.uk/research/credit-in-the-cost-of-living-crisis-the-good-credit-index-2023/" target="_blank">
+                <img src="assets/images/goodcreditindex.png" alt="Good Credit Index">
+            </a>
+            <div class="project-content">
+                <h2>Good Credit Index</h2>
+                <p>Produced all maps included in the 2023 Good Credit Index Report with Demos.</p>
+                <a href="https://demos.co.uk/research/credit-in-the-cost-of-living-crisis-the-good-credit-index-2023/" target="_blank">Good Credit Index 2023</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <a href="assets/cryptoassets.pdf" target="_blank">
+                <img src="assets/images/cryptoassets.png" alt="Cryptoassets Briefing">
+            </a>
+            <div class="project-content">
+                <h2>Cryptoassets Briefing</h2>
+                <p>A briefing on Cryptoassets produced during a 3-month internship with the Home Office's Central Analysis and Insights Team.</p>
+                <a href="assets/cryptoassets.pdf" target="_blank">Cryptoassets Briefing</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

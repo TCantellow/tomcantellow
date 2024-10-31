@@ -13,40 +13,59 @@ body {
 
 header {
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-h1 {
-    font-size: 2em;
-    margin: 0;
+.header-content {
+    display: flex; 
+    justify-content: space-between; /* Space between the dark mode and nav links */
+    align-items: center; /* Align items vertically */
+    width: 100%; /* Full width to align items correctly */
 }
 
-.content {
-    line-height: 1.6;
+/* Dark Mode Container */
+.dark-mode-container {
+    flex-grow: 1; /* Allow this section to take up available space on the left */
 }
 
+/* Sub-navigation styling */
 .sub-nav {
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
+    display: flex; /* Display links in a row */
     gap: 15px; /* Space between nav items */
-    margin-bottom: 20px;
+    align-items: center; /* Ensure vertical alignment */
+    justify-content: flex-end; /* Align nav items to the right */
 }
 
 .sub-nav a {
     padding: 10px;
     text-decoration: none;
-    color: inherit;
-    white-space: nowrap;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s;
+    color: inherit; /* Use inherited text color */
+    white-space: nowrap; /* Prevent text wrapping */
+    border-bottom: 2px solid transparent; /* Border for hover effect */
+    transition: border-bottom 0.3s; /* Smooth transition */
 }
 
 .sub-nav a:hover {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #000; /* Hover effect */
 }
 
+/* Style for the toggle button to match links */
+.toggle-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 14px; /* Match font size with nav items */
+    color: inherit; /* Use inherited text color */
+    padding: 10px; /* Add padding for spacing */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Ensure hover effect on the button */
+.toggle-button:hover {
+    border-bottom: 2px solid transparent; /* Match hover effect for consistency */
+}
+
+/* Styling for footer */
 footer {
     display: flex;
     justify-content: flex-end; /* Align footer content to the right */
@@ -74,17 +93,8 @@ footer {
     margin: 0 5px; /* Horizontal spacing for span elements */
 }
 
-.toggle-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    color: #555;
-    margin-left: 20px;
-}
-
 /* Dark mode styles */
 .dark body {
-    background-color: #333;
-    color: #ffffff;
+    background-color: #333; /* Background for dark mode */
+    color: #ffffff; /* Text color for dark mode */
 }
