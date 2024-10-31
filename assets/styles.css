@@ -148,3 +148,30 @@ h2 {
     margin-bottom: 10px; /* Reduced space below the heading */
 }
 
+.profile {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Space between the image and the text */
+    margin: 20px 0; /* Optional spacing around the profile section */
+}
+
+.profile img {
+    width: 300px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column; /* Stack the name and subheading */
+    gap: 5px; /* Space between name and subheading */
+}
+
+.profile-info h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Font size for the name */
+}
+
+.profile-info .subheading {
+    color: #666; /* Optional: lighter color for subheading */
+    font-size: 1em; /* Font size for the subheading */
+}

@@ -12,22 +12,21 @@ function toggleMode() {
     updateMode();
 }
 
-window.onload = function() {
-    if (!localStorage.getItem('theme')) {
-        localStorage.setItem('theme', 'light');
-    }
-    updateMode();
-}
-
-// Function to load the header HTML
 function loadHeader() {
     fetch('assets/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-container').innerHTML = data;
+            // Reassign the toggleMode function to the button after loading
+            document.querySelector(".toggle-button").onclick = toggleMode;
         });
 }
 
-// Call the function to load the header on page load
-window.onload = loadHeader;
-;
+// Call functions on page load
+window.addEventListener("load", function() {
+    if (!localStorage.getItem('theme')) {
+        localStorage.setItem('theme', 'light');
+    }
+    updateMode();
+    loadHeader();
+});
