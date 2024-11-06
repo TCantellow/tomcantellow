@@ -9,20 +9,28 @@ function loadHeader() {
         });
 }
 
-let currentIndex = 0; // Keep track of the current index of carousel items
-const items = document.querySelectorAll('.carousel-item'); // Select all carousel items
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all carousel items
+    const items = document.querySelectorAll('.carousel-item');
 
-// Function to change the slide
-function changeSlide(direction) {
-    // Hide the current slide by removing the 'active' class
-    items[currentIndex].classList.remove('active');
+    let currentIndex = 0; // Keep track of the current index of carousel items
 
-    // Update the index for the new slide
-    currentIndex = (currentIndex + direction + items.length) % items.length;
+    // Function to change the slide
+    function changeSlide(direction) {
+        // Hide the current slide by removing the 'active' class
+        items[currentIndex].classList.remove('active');
 
-    // Show the new slide by adding the 'active' class
+        // Update the index for the new slide
+        currentIndex = (currentIndex + direction + items.length) % items.length;
+
+        // Show the new slide by adding the 'active' class
+        items[currentIndex].classList.add('active');
+    }
+
+    // Initialize the first slide as active
     items[currentIndex].classList.add('active');
-}
 
-// Initialize the first slide as active
-items[currentIndex].classList.add('active');
+    // Add event listeners to buttons
+    document.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
+    document.querySelector('.next').addEventListener('click', () => changeSlide(1));
+});
