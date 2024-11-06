@@ -175,3 +175,55 @@ h2 {
     color: #666; /* Optional: lighter color for subheading */
     font-size: 1em; /* Font size for the subheading */
 }
+
+.carousel {
+    position: relative;
+    max-width: 100%; /* Take the full width of the body, which is 800px */
+    margin: 0 auto; /* Center align to match body centering */
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item .caption {
+    padding: 10px 0; /* Space above and below the caption */
+    color: #000; /* Black font color */
+    font-size: 0.9em; /* Adjust font size as desired */
+    background: none; /* Remove background */
+}
+
+
+.carousel-item.active {
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
