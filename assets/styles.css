@@ -186,27 +186,32 @@ h2 {
     color: #555; /* Standard text color */
 }
 
-/* Portfolio item styling (unchanged from your existing design) */
-.portfolio-item {
-    text-align: center;
-    margin-bottom: 2em;
-    font-size: 12px;
-    max-width: 300px; /* Limit the width to 300px */
-    word-wrap: break-word; /* Ensures the text will wrap at the container boundary */
-    white-space: normal; /* Ensures text can wrap normally instead of staying on one line */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
+#msc-portfolio {
+    margin-top: 30px;
 }
 
+.portfolio-container {
+    display: grid; /* Enables CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between the items */
+    justify-items: center; /* Centers items horizontally */
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    text-align: center;
+    font-size: 12px;
+    max-width: 300px; /* Ensures each item is 300px wide */
+    margin-bottom: 2em;
+}
 
 .portfolio-item img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
+    max-width: 100%;
 }
 
 .portfolio-item p {
-    margin-top: 1em;
-    font-size: 1.1em;
-    color: #555;
+    margin-top: 10px; /* Space between image and description */
 }
+
