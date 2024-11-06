@@ -10,25 +10,30 @@ function loadHeader() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item');
+    const images = document.querySelectorAll('.thumbnail img');  // Select all thumbnail images
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeModal = document.querySelector(".close");
 
-    if (items.length === 0) {
-        console.error("No carousel items found.");
-        return;
-    }
+    // Open the modal with full-size image when thumbnail is clicked
+    images.forEach((img) => {
+        img.addEventListener("click", function(event) {
+            event.preventDefault();
+            const fullSizeImageSrc = event.target.parentElement.getAttribute('href');
+            modal.style.display = "block";
+            modalImage.src = fullSizeImageSrc;
+        });
+    });
 
-    // Function to change the slide
-    function changeSlide(direction) {
-        items[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + direction + items.length) % items.length;
-        items[currentIndex].classList.add('active');
-    }
+    // Close the modal when clicking on the close button
+    closeModal.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
 
-    // Initialize the first slide as active
-    items[currentIndex].classList.add('active');
-
-    // Attach the event listeners to buttons
-    document.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
-    document.querySelector('.next').addEventListener('click', () => changeSlide(1));
+    // Close the modal if the user clicks outside the image
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
 });

@@ -6,48 +6,79 @@
     <title>Tom Cantellow</title>
     <meta name="Projects" content="My Projects">
     <meta name="theme-color" content="#ffffff">
-
-    <link rel="stylesheet" href="assets/styles.css"> <!-- Link to external stylesheet -->
-    <script src="assets/script.js" defer></script> <!-- Link to external script -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/script.js" defer></script>
     <style>
-        .project {
-            display: flex;
-            align-items: center;
-            padding: 15px 0;
-            margin-bottom: 10px;
+        /* Add custom styles for the gallery */
+        .gallery-intro {
+            text-align: center;
+            margin-bottom: 30px;
         }
 
-        .project img {
-            width: 300px;
-            height: 300px;
+        .gallery-thumbnails {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .thumbnail {
+            text-align: center;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: auto;
             object-fit: cover;
-            margin-right: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
         }
 
-        .project-content {
-            max-width: 600px;
+        .thumbnail img:hover {
+            transform: scale(1.05); /* Slight zoom effect */
         }
 
-        .project-content h2 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-
-        .project-content p {
-            margin: 10px 0;
+        .caption {
+            margin-top: 10px;
+            font-size: 0.9em;
             color: #555;
         }
 
-        .project-content a {
-            display: inline-block;
-            margin-top: 5px;
-            text-decoration: none;
-            color: #007bff;
+        /* Optional: Add styling for full image modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            display: block;
+            margin: 0 auto;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
             transition: color 0.3s;
         }
 
-        .project-content a:hover {
-            color: #0056b3;
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -138,45 +169,39 @@
             <h2>MSc Portfolio</h2>
             <p>A selection of maps I produced during my Applied GIS MSc at the University of Sheffield.</p>
         </div>
-        
-        <div class="carousel">
-            <!-- Carousel items (each containing an image and its caption) -->
-            <div class="carousel-item active">
-                <img src="assets/images/gallery/LondonAlt.png" alt="Map of London">
-                <div class="caption">
-                    <p>A dasymetric map of London's buildings, coloured by the largest ethnic minority of the neighbourhood.</p>
-                </div>
+
+        <div class="gallery-thumbnails">
+            <div class="thumbnail">
+                <a href="assets/images/gallery/LondonAlt.png" target="_blank">
+                    <img src="assets/images/gallery/LondonAlt.png" alt="Map of London">
+                </a>
+                <div class="caption">A dasymetric map of London's buildings, coloured by the largest ethnic minority of the neighbourhood.</div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/images/gallery/NYCTrees.png" alt="Hexmap of New York City's Trees">
-                <div class="caption">
-                    <p>A hexagon-binned density map of all of New York City's street trees.</p>
-                </div>
+            <div class="thumbnail">
+                <a href="assets/images/gallery/NYCTrees.png" target="_blank">
+                    <img src="assets/images/gallery/NYCTrees.png" alt="Hexmap of New York City's Trees">
+                </a>
+                <div class="caption">A hexagon-binned density map of all of New York City's street trees.</div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/images/gallery/TreesNoHexBlack.png" alt="Pointmap of New York City's Trees">
-                <div class="caption">
-                    <p>A point map of all of New York City's street trees.</p>
-                </div>
+            <div class="thumbnail">
+                <a href="assets/images/gallery/NYCBuildingAge.png" target="_blank">
+                    <img src="assets/images/gallery/NYCBuildingAge.png" alt="Map of Building Age in New York City">
+                </a>
+                <div class="caption">A dasymetric map of New York City's built environment, visualising the age of buildings.</div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/images/gallery/NYCBuildingAge.png" alt="Map of Building Age in New York City">
-                <div class="caption">
-                    <p>A dasymetric map of New York City's built environment, visualising the age of buildings.</p>
-                </div>
+            <div class="thumbnail">
+                <a href="assets/images/gallery/EuropeGDPCartogram.png" target="_blank">
+                    <img src="assets/images/gallery/EuropeGDPCartogram.png" alt="Cartogram of Europe's GDP">
+                </a>
+                <div class="caption">A cartogram of Europe, distorted by GDP.</div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/images/gallery/EuropeGDPCartogram.png" alt="Cartogram of Europe's GDP">
-                <div class="caption">
-                    <p>A cartogram of Europe, distorted by GDP.</p>
-                </div>
-            </div>
-            
-            <!-- Navigation buttons -->
-            <button class="prev" onclick="changeSlide(-1)">❮ Prev</button>
-            <button class="next" onclick="changeSlide(1)">Next ❯</button>
         </div>
         
+        <!-- Modal for displaying full-size images -->
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image" alt="Full-size image">
+        </div>
         
     </main>
 </body>
