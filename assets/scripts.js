@@ -10,42 +10,25 @@ function loadHeader() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Run the carousel setup only after ensuring all elements are present
-    function initializeCarousel() {
-        let currentIndex = 0; // Keep track of the current index of carousel items
-        const items = document.querySelectorAll('.carousel-item'); // Select all carousel items
+    let currentIndex = 0;
+    const items = document.querySelectorAll('.carousel-item');
 
-        if (items.length === 0) {
-            console.error("No carousel items found."); // Debug message
-            return; // Exit if no items are found
-        }
-
-        // Function to change the slide
-        function changeSlide(direction) {
-            // Hide the current slide by removing the 'active' class
-            items[currentIndex].classList.remove('active');
-
-            // Update the index for the new slide
-            currentIndex = (currentIndex + direction + items.length) % items.length;
-
-            // Show the new slide by adding the 'active' class
-            items[currentIndex].classList.add('active');
-        }
-
-        // Initialize the first slide as active
-        items[currentIndex].classList.add('active');
-
-        // Add event listeners for the buttons
-        document.querySelector('.prev').addEventListener('click', function() {
-            changeSlide(-1); // Go to the previous slide
-        });
-
-        document.querySelector('.next').addEventListener('click', function() {
-            changeSlide(1); // Go to the next slide
-        });
+    if (items.length === 0) {
+        console.error("No carousel items found.");
+        return;
     }
 
-    // Wait until all resources are fully loaded
-    window.onload = initializeCarousel;
-});
+    // Function to change the slide
+    function changeSlide(direction) {
+        items[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + direction + items.length) % items.length;
+        items[currentIndex].classList.add('active');
+    }
 
+    // Initialize the first slide as active
+    items[currentIndex].classList.add('active');
+
+    // Attach the event listeners to buttons
+    document.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
+    document.querySelector('.next').addEventListener('click', () => changeSlide(1));
+});

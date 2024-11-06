@@ -217,6 +217,14 @@ button.prev, button.next {
     z-index: 1000; /* Ensure buttons are on top of images */
 }
 
+button.prev {
+    left: 10px; /* Position the "Prev" button on the left side */
+}
+
+button.next {
+    right: 10px; /* Position the "Next" button on the right side */
+}
+
 button.prev:hover, button.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
