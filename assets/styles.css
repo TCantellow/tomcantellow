@@ -22,11 +22,6 @@ header {
     width: 100%; /* Full width to align items correctly */
 }
 
-/* Dark Mode Container */
-.dark-mode-container {
-    flex-grow: 1; /* Allow this section to take up available space on the left */
-}
-
 /* Sub-navigation styling */
 .sub-nav {
     display: flex; /* Display links in a row */
@@ -134,12 +129,6 @@ footer {
     margin: 0 5px; /* Horizontal spacing for span elements */
 }
 
-/* Dark mode styles */
-.dark body {
-    background-color: #333; /* Background for dark mode */
-    color: #ffffff; /* Text color for dark mode */
-}
-
 /* Adjusted heading styling for <h2> */
 h2 {
     font-size: 1.3em;
@@ -174,4 +163,43 @@ h2 {
 .profile-info .subheading {
     color: #666; /* Optional: lighter color for subheading */
     font-size: 1em; /* Font size for the subheading */
+}
+
+/* Remove background from final project section */
+.final-project {
+    padding: 2em;
+}
+
+/* Styling for the initial heading and description (matching the other sections and left-aligned) */
+.final-project > h2 {
+    font-size: 1.3em; /* Matches the h2 size in the other sections */
+    color: #333; /* Standard text color */
+    margin-top: 30px; /* Consistent margin above the title */
+    margin-bottom: 10px; /* Consistent margin below the title */
+    text-align: left; /* Align title to the left */
+}
+
+.final-project > p {
+    text-align: left; /* Left-align description */
+    font-size: 1em; /* Matches other sections' description font size */
+    margin-bottom: 2em; /* Bottom margin for spacing */
+    color: #555; /* Standard text color */
+}
+
+/* Portfolio item styling (unchanged from your existing design) */
+.portfolio-item {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio-item p {
+    margin-top: 1em;
+    font-size: 1.1em;
+    color: #555;
 }
