@@ -190,7 +190,14 @@ h2 {
 .portfolio-item {
     text-align: center;
     margin-bottom: 2em;
+    font-size: 12px;
+    max-width: 300px; /* Limit the width to 300px */
+    word-wrap: break-word; /* Ensures the text will wrap at the container boundary */
+    white-space: normal; /* Ensures text can wrap normally instead of staying on one line */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
 }
+
 
 .portfolio-item img {
     max-width: 100%;
