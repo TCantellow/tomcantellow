@@ -17,10 +17,11 @@ header {
 
 .header-content {
     display: flex; 
-    justify-content: space-between; /* Space between the dark mode and nav links */
-    align-items: center; /* Align items vertically */
-    width: 100%; /* Full width to align items correctly */
+    justify-content: center; /* Center-align horizontally */
+    align-items: center; /* Center-align vertically */
+    height: 100vh; /* Full viewport height for vertical centering */
 }
+
 
 /* Sub-navigation styling */
 .sub-nav {
@@ -139,10 +140,15 @@ h2 {
 
 .profile {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
+    align-items: center; /* Vertically center text and image */
+    justify-content: center; /* Center the whole profile section in the page */
+    max-width: 800px; /* Set max width to control the layout width */
+    margin: 0 auto; /* Center align within the body */
     gap: 20px; /* Space between the image and the text */
-    margin: 20px 0; /* Optional spacing around the profile section */
+    margin-top: 5vh; /* Optional: add a slight top margin */
+    margin-bottom: 40px; /* Match space below navigation */
 }
+
 
 .profile img {
     width: 300px; /* Set a fixed width for the image */
@@ -153,7 +159,9 @@ h2 {
     display: flex;
     flex-direction: column; /* Stack the name and subheading */
     gap: 5px; /* Space between name and subheading */
+    text-align: left; /* Ensure text aligns to the left */
 }
+
 
 .profile-info h2 {
     margin: 0; /* Remove default margin */
