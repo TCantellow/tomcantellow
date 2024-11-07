@@ -27,7 +27,7 @@ header {
     display: flex; /* Display links in a row */
     gap: 15px; /* Space between nav items */
     align-items: center; /* Ensure vertical alignment */
-    justify-content: flex-end; /* Align nav items to the right */
+    justify-content: center; /* Center-align nav items */
 }
 
 .sub-nav a {
