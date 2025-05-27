@@ -1,96 +1,119 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
     <title>Tom Cantellow</title>
-    <meta name="Statistics" content="Learning materials">
-    <meta name="theme-color" content="#ffffff">
-
-    <link rel="stylesheet" href="assets/styles.css"> <!-- Link to external stylesheet -->
-    <script src="assets/script.js" defer></script> <!-- Link to external script -->
+    <meta name="Statistics" content="Learning materials" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/script.js" defer></script>
+    <style>
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .category {
+            margin-bottom: 2rem;
+        }
+        .category strong {
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        ul.resources-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        ul.resources-list > li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <div id="header-placeholder"></div>
-
     <script>
-        // Function to load the header
         function loadHeader() {
-            fetch('assets/header.html') // Fetch the header HTML
+            fetch('assets/header.html')
                 .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok ' + response.statusText);
-                    }
+                    if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
                     return response.text();
                 })
                 .then(data => {
-                    document.getElementById('header-placeholder').innerHTML = data; // Insert header into the placeholder
+                    document.getElementById('header-placeholder').innerHTML = data;
                 })
                 .catch(error => console.error('Error loading header:', error));
         }
-
-        // Load the header when the page loads
         window.onload = loadHeader;
     </script>
 
-<body>
-    <h1>Resources for learning statistics and data science</h1>
+    <main>
+        <h1>Resources for learning statistics and data science</h1>
 
-    <ul style="list-style-type:none; padding:0;">
-        <li style="margin-bottom:0;">
-            <p style="margin-bottom:5px;"><strong>Introductory Guides to R and Data Science:</strong></p>
-                <li><a href="https://r4ds.had.co.nz/" target="_blank">R for Data Science</a> - Hands-on guide for data science with R.</li>
-                <li><a href="https://benwhalley.github.io/just-enough-r/" target="_blank">Just Enough R</a> - Concise guide to data analysis in R for beginners.</li>
-                <li><a href="https://bookdown.org/ndphillips/YaRrr/" target="_blank">YaRrr! The Pirate’s Guide to R</a> - Fun and accessible intro to R programming.</li>
-                <li><a href="https://clauswilke.com/dataviz/index.html" target="_blank">Fundamentals of Data Visualisation</a> - Comprehensive guide to data visualisation concepts.</li>
-                <li><a href="https://www.statlearning.com/" target="_blank">Introduction to Statistical Learning</a> - Foundational textbook for machine learning.</li>
-                <li><a href="https://xcelab.net/rm/" target="_blank">Statistical Rethinking</a> - Another foundational textbook for applied statistics</li>
-                <li><a href="https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/" target="_blank">Statistical Rethinking Recoded</a> - Recoded exercises from the Statistical Rethinking book.</li>
-        </li>
-        <li style="margin-bottom:0;">
-            <p style="margin-bottom:5px;"><strong>Advanced R and Hierarchical Modelling:</strong></p>
-                <li><a href="https://bookdown.org/roback/bookdown-BeyondMLR/" target="_blank">Beyond Multiple Linear Regression</a> - Advanced statistics and regression techniques in R.</li>
-                <li><a href="https://m-clark.github.io/models-by-example/" target="_blank">Models by Example</a> - Practical examples of statistical modeling.</li>
-                <li><a href="http://adv-r.had.co.nz/" target="_blank">Advanced R</a> - Advanced techniques for R programming.</li>
-                <li><a href="http://www.stat.columbia.edu/~gelman/arm/" target="_blank">Applied Regression and Multilevel Models</a> - Detailed guide to regression and multilevel models.</li>
-                <li><a href="https://www.youtube.com/watch?v=QeCJ9ON0WDc" target="_blank">Multilevel Model Overview</a> - Video explaining multilevel model basics.</li>
-                <li><a href="https://rpubs.com/corey_sparks/70812" target="_blank">Introduction to Multilevel Models</a> - Tutorial on multilevel models in R.</li>
-                <li><a href="http://www.rensenieuwenhuis.nl/r-sessions-16-multilevel-model-specification-lme4/" target="_blank">Multilevel Model Specification</a> - Detailed post on specifying multilevel models in R.</li>
-                <li><a href="https://quantdev.ssri.psu.edu/tutorials/r-bootcamp-introduction-multilevel-model-and-interactions" target="_blank">Multilevel Model Bootcamp</a> - Comprehensive bootcamp on multilevel models in R.</li>
-                <li><a href="https://www.youtube.com/watch?v=boPyjojYHUY" target="_blank">Nested Data Analysis</a> - Video on analyzing nested data with multilevel models.</li>
-                <li><a href="https://www.youtube.com/watch?v=Yqf91pPzkU4" target="_blank">Multilevel Models and Clustering</a> - Guide on clustering methods in multilevel models.</li>
-                <li><a href="https://towardsdatascience.com/hierarchical-clustering-on-categorical-data-in-r-a27e578f2995" target="_blank">Hierarchical Clustering on Categorical Data</a> - Intro to hierarchical clustering in R.</li>
-                <li><a href="https://rstudio-pubs-static.s3.amazonaws.com/33653_57fc7b8e5d484c909b615d8633c01d51.html" target="_blank">Hierarchical Models in R</a> - Deep dive into hierarchical models in R.</li>
-                <li><a href="https://joshua-nugent.github.io/allFit/" target="_blank">AllFit</a> - Tool for evaluating multilevel models in R.</li>
-        </li>
-        <li style="margin-bottom:0;">
-            <p style="margin-bottom:5px;"><strong>Geographic Data Science:</strong></p>
-                <li><a href="https://profrichharris.github.io/MandM/" target="_blank">Mapping and Modelling Geographic Data in R</a> - Mixed-methods and modeling in data analysis.</li>
-                <li><a href="https://spatialcausal.org/" target="_blank">Spatial Causal Inference</a> - Learn spatial analysis and causal inference techniques.</li>
-                <li><a href="https://etranos.info/urban_analytics_city_science/" target="_blank">Urban Analytics and City Science</a> - A guide to analyzing urban data and city science.</li>
-                <li><a href="https://geographicdata.science/book/intro.html" target="_blank">Geographic Data Science</a> - Learn geographic data science in Python.</li>
-                <li><a href="https://darribas.org/gds_course/content/home.html" target="_blank">Geographic Data Science</a> - An additional course for learning geographic data science.</li>
-                <li><a href="https://geocompr.robinlovelace.net/index.html" target="_blank">Geocomputation with R</a> - Advanced geospatial data analysis in R.</li>
-                <li><a href="https://spatial-microsim-book.robinlovelace.net/" target="_blank">Spatial Microsimulation</a> - Covers spatial data microsimulation techniques in R.</li>
-                <li><a href="https://www.esri.com/arcgis-blog/author/j_nelson/" target="_blank">Esri GIS Blog</a> - Articles on GIS and spatial analysis.</li>
-                <li><a href="https://www.flickr.com/groups/qgis/pool" target="_blank">QGIS User Group</a> - Flickr group for QGIS community projects and resources.</li>
-                <li><a href="https://www.helenmakesmaps.com/blog" target="_blank"> HelenMakesMaps</a> - Helen posts lots of free tutorials and is a great advocate for GIS.</li>
-        </li>
-        <li style="margin-bottom:0;">
-            <p style="margin-bottom:5px;"><strong>Additional Resources:</strong></p>
-                <li><a href="https://statmodeling.stat.columbia.edu/" target="_blank">Statistical Modeling, Causal Inference, and Social Science</a> - Blog on statistics and causal inference by Andrew Gelman.</li>
-                <li><a href="https://link.springer.com/article/10.1007/s11135-017-0584-6" target="_blank">Springer: Statistical Methods in Survey Research</a> - Scholarly article on statistical methods in survey research.</li>
-                <li><a href="https://advstats.psychstat.org/book/longitudinal/index.php" target="_blank">Longitudinal Data Analysis</a> - Guide to analysing longitudinal data.</li>
-                <li><a href="https://w3schools.com/sql/" target="_blank">W3Schools SQL Tutorial</a> - Beginner's guide to SQL for data management.</li>
-                <li><a href="https://excel-practice-online.com/" target="_blank">Excel Practice Online</a> - Free online Excel practice exercises.</li>
-        </li>
-    </ul>
-    
-    
-</body>
+        <section class="category">
+            <strong>Introductory Guides to R and Data Science:</strong>
+            <ul class="resources-list">
+                <li><a href="https://r4ds.had.co.nz/" target="_blank" rel="noopener noreferrer">R for Data Science</a> – Hands-on guide to data science with R.</li>
+                <li><a href="https://benwhalley.github.io/just-enough-r/" target="_blank" rel="noopener noreferrer">Just Enough R</a> – Concise intro to R for beginners.</li>
+                <li><a href="https://bookdown.org/ndphillips/YaRrr/" target="_blank" rel="noopener noreferrer">YaRrr! The Pirate’s Guide to R</a> – Fun, accessible R programming guide.</li>
+                <li><a href="https://clauswilke.com/dataviz/index.html" target="_blank" rel="noopener noreferrer">Fundamentals of Data Visualisation</a> – Comprehensive visualization concepts.</li>
+                <li><a href="https://www.statlearning.com/" target="_blank" rel="noopener noreferrer">Introduction to Statistical Learning</a> – Foundational machine learning textbook.</li>
+                <li><a href="https://xcelab.net/rm/" target="_blank" rel="noopener noreferrer">Statistical Rethinking</a> – Key applied statistics textbook.</li>
+                <li><a href="https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/" target="_blank" rel="noopener noreferrer">Statistical Rethinking Recoded</a> – Recoded exercises from the book.</li>
+            </ul>
+        </section>
 
-        <div id="footer-placeholder"></div>
+        <section class="category">
+            <strong>Advanced R and Hierarchical Modelling:</strong>
+            <ul class="resources-list">
+                <li><a href="https://bookdown.org/roback/bookdown-BeyondMLR/" target="_blank" rel="noopener noreferrer">Beyond Multiple Linear Regression</a> – Advanced regression techniques.</li>
+                <li><a href="https://m-clark.github.io/models-by-example/" target="_blank" rel="noopener noreferrer">Models by Example</a> – Practical statistical modeling examples.</li>
+                <li><a href="http://adv-r.had.co.nz/" target="_blank" rel="noopener noreferrer">Advanced R</a> – Deep dive into R programming.</li>
+                <li><a href="http://www.stat.columbia.edu/~gelman/arm/" target="_blank" rel="noopener noreferrer">Applied Regression and Multilevel Models</a> – Guide to regression and multilevel models.</li>
+                <li><a href="https://www.youtube.com/watch?v=QeCJ9ON0WDc" target="_blank" rel="noopener noreferrer">Multilevel Model Overview</a> – Introductory video on multilevel models.</li>
+                <li><a href="https://rpubs.com/corey_sparks/70812" target="_blank" rel="noopener noreferrer">Introduction to Multilevel Models</a> – Tutorial for multilevel models in R.</li>
+                <li><a href="http://www.rensenieuwenhuis.nl/r-sessions-16-multilevel-model-specification-lme4/" target="_blank" rel="noopener noreferrer">Multilevel Model Specification</a> – Detailed model specification post.</li>
+                <li><a href="https://quantdev.ssri.psu.edu/tutorials/r-bootcamp-introduction-multilevel-model-and-interactions" target="_blank" rel="noopener noreferrer">Multilevel Model Bootcamp</a> – Comprehensive workshop material.</li>
+                <li><a href="https://www.youtube.com/watch?v=boPyjojYHUY" target="_blank" rel="noopener noreferrer">Nested Data Analysis</a> – Video on nested data analysis.</li>
+                <li><a href="https://www.youtube.com/watch?v=Yqf91pPzkU4" target="_blank" rel="noopener noreferrer">Multilevel Models and Clustering</a> – Guide on clustering methods.</li>
+                <li><a href="https://towardsdatascience.com/hierarchical-clustering-on-categorical-data-in-r-a27e578f2995" target="_blank" rel="noopener noreferrer">Hierarchical Clustering on Categorical Data</a> – Intro to hierarchical clustering in R.</li>
+                <li><a href="https://rstudio-pubs-static.s3.amazonaws.com/33653_57fc7b8e5d484c909b615d8633c01d51.html" target="_blank" rel="noopener noreferrer">Hierarchical Models in R</a> – In-depth look at hierarchical models.</li>
+                <li><a href="https://joshua-nugent.github.io/allFit/" target="_blank" rel="noopener noreferrer">AllFit</a> – Tool for evaluating multilevel models.</li>
+            </ul>
+        </section>
+
+        <section class="category">
+            <strong>Geographic Data Science:</strong>
+            <ul class="resources-list">
+                <li><a href="https://profrichharris.github.io/MandM/" target="_blank" rel="noopener noreferrer">Mapping and Modelling Geographic Data in R</a> – Mixed-methods spatial modeling.</li>
+                <li><a href="https://spatialcausal.org/" target="_blank" rel="noopener noreferrer">Spatial Causal Inference</a> – Spatial analysis and causal inference.</li>
+                <li><a href="https://etranos.info/urban_analytics_city_science/" target="_blank" rel="noopener noreferrer">Urban Analytics and City Science</a> – Guide to urban data analysis.</li>
+                <li><a href="https://geographicdata.science/book/intro.html" target="_blank" rel="noopener noreferrer">Geographic Data Science</a> – Intro to geographic data science in Python.</li>
+                <li><a href="https://darribas.org/gds_course/content/home.html" target="_blank" rel="noopener noreferrer">Geographic Data Science</a> – Additional course on geographic data science.</li>
+                <li><a href="https://geocompr.robinlovelace.net/index.html" target="_blank" rel="noopener noreferrer">Geocomputation with R</a> – Advanced geospatial data analysis.</li>
+                <li><a href="https://spatial-microsim-book.robinlovelace.net/" target="_blank" rel="noopener noreferrer">Spatial Microsimulation</a> – Techniques in spatial microsimulation.</li>
+                <li><a href="https://www.esri.com/arcgis-blog/author/j_nelson/" target="_blank" rel="noopener noreferrer">Esri GIS Blog</a> – GIS and spatial analysis articles.</li>
+                <li><a href="https://www.flickr.com/groups/qgis/pool" target="_blank" rel="noopener noreferrer">QGIS User Group</a> – Flickr community for QGIS projects.</li>
+                <li><a href="https://www.helenmakesmaps.com/blog" target="_blank" rel="noopener noreferrer">HelenMakesMaps</a> – Tutorials and GIS advocacy.</li>
+            </ul>
+        </section>
+
+        <section class="category">
+            <strong>Additional Resources:</strong>
+            <ul class="resources-list">
+                <li><a href="https://statmodeling.stat.columbia.edu/" target="_blank" rel="noopener noreferrer">Statistical Modeling, Causal Inference, and Social Science</a> – Blog by Andrew Gelman.</li>
+                <li><a href="https://link.springer.com/article/10.1007/s11135-017-0584-6" target="_blank" rel="noopener noreferrer">Springer: Statistical Methods in Survey Research</a> – Scholarly article.</li>
+                <li><a href="https://advstats.psychstat.org/book/longitudinal/index.php" target="_blank" rel="noopener noreferrer">Longitudinal Data Analysis</a> – Guide to longitudinal data methods.</li>
+                <li><a href="https://w3schools.com/sql/" target="_blank" rel="noopener noreferrer">W3Schools SQL Tutorial</a> – Beginner SQL guide.</li>
+                <li><a href="https://excel-practice-online.com/" target="_blank" rel="noopener noreferrer">Excel Practice Online</a> – Free Excel exercises.</li>
+            </ul>
+        </section>
     </main>
 
+    <div id="footer-placeholder"></div>
 </body>
 </html>
