@@ -9,34 +9,35 @@
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/script.js" defer></script>
     <style>
-        /* Remove underline from links */
-        a {
-            text-decoration: none;
-            color: #0066cc;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        /* Space between main categories */
-        .category {
-            margin-bottom: 2rem;
-        }
-        /* Space between list items */
-        ul.tools-list {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-            margin-top: 0.5rem;
-        }
-        ul.tools-list > li {
-            margin-bottom: 0.5rem;
-        }
-        /* Category heading */
-        .category > strong {
-            font-size: 1.1rem;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-    </style>
+    a {
+        text-decoration: none;
+        color: #0066cc;
+        font-weight: bold; /* Make links bold */
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .category {
+        margin-bottom: 2rem;
+    }
+    .category strong {
+        font-size: 1.1rem;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    ul.resources-list {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    ul.resources-list > li {
+        margin-bottom: 0.5rem;
+        font-weight: normal; /* normal weight for the description text */
+    }
+    ul.resources-list > li a {
+        font-weight: bold; /* override to bold only link text */
+    }
+</style>
 </head>
 <body>
     <div id="header-placeholder"></div>
