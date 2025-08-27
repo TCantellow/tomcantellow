@@ -1,5 +1,6 @@
 /* assets/styles.css */
 
+/* General Body Styling */
 body {
     max-width: 800px;
     margin: 0 auto;
@@ -11,40 +12,40 @@ body {
     text-align: justify;
 }
 
+/* Header */
 header {
     margin-bottom: 20px;
 }
 
 .header-content {
-    display: flex; 
-    justify-content: center; /* Center-align horizontally */
-    align-items: center; /* Center-align vertically */
-    height: 100vh; /* Full viewport height for vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-
-/* Sub-navigation styling */
+/* Sub-navigation Styling */
 .sub-nav {
-    display: flex; /* Display links in a row */
-    gap: 15px; /* Space between nav items */
-    align-items: center; /* Ensure vertical alignment */
-    justify-content: center; /* Center-align nav items */
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .sub-nav a {
     padding: 10px;
     text-decoration: none;
-    color: inherit; /* Use inherited text color */
-    white-space: nowrap; /* Prevent text wrapping */
-    border-bottom: 2px solid transparent; /* Border for hover effect */
-    transition: border-bottom 0.3s; /* Smooth transition */
+    color: inherit;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
 }
 
 .sub-nav a:hover {
-    border-bottom: 2px solid #000; /* Hover effect */
+    border-bottom: 2px solid #000;
 }
 
-/* Positioning the dropdown content and hiding it initially */
+/* Dropdown Menu */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -58,9 +59,9 @@ header {
 }
 
 .dropdown-content {
-    display: none; /* Hidden by default */
+    display: none;
     position: absolute;
-    background-color: #ffffff; /* Background color for the dropdown items */
+    background-color: #ffffff;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -75,37 +76,34 @@ header {
     white-space: nowrap;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Optional styling for hover effect on dropdown items */
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
-/* Style for the toggle button to match links */
+/* Toggle Button Styling */
 .toggle-button {
-    background: none; /* No background */
-    border: none; /* No border */
-    cursor: pointer; /* Change cursor to pointer */
-    font-size: 14px; /* Match font size with nav items */
-    color: inherit; /* Use inherited text color */
-    padding: 10px; /* Add padding for spacing */
-    white-space: nowrap; /* Prevent text wrapping */
-    text-decoration: none; /* Remove underline */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: inherit;
+    padding: 10px;
+    white-space: nowrap;
+    text-decoration: none;
 }
 
-/* Ensure hover effect on the button */
 .toggle-button:hover {
-    border-bottom: 2px solid transparent; /* Match hover effect for consistency */
+    border-bottom: 2px solid transparent;
 }
 
-/* Styling for footer */
+/* Footer Styling */
 footer {
     display: flex;
-    justify-content: flex-end; /* Align footer content to the right */
+    justify-content: flex-end;
     align-items: center;
     margin-top: 20px;
     padding: 10px 0;
@@ -119,105 +117,88 @@ footer {
 
 .nav-title {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
 }
 
 .nav-link {
-    margin-right: 5px; /* Space on the right for links */
+    margin-right: 5px;
 }
 
 .nav-title span {
-    margin: 0 5px; /* Horizontal spacing for span elements */
+    margin: 0 5px;
 }
 
-/*Styling for Profile */
-.profile-info {
-    display: flex;
-    flex-direction: column; /* Stack name and subheading */
-    gap: 5px;               /* Space between name and subheading */
-    text-align: center;      /* Center text just for this profile-info block */
-}
-
-/* Adjusted heading styling for <h2> */
-h2 {
-    font-size: 1.3em;
-    color: #333;
-    margin-top: 30px; /* Space above the heading */
-    margin-bottom: 10px; /* Reduced space below the heading */
-}
-
+/* Profile Section */
 .profile {
     display: flex;
-    align-items: center; /* Vertically center text and image */
-    justify-content: center; /* Center the whole profile section in the page */
-    max-width: 800px; /* Set max width to control the layout width */
-    margin: 0 auto; /* Center align within the body */
-    gap: 20px; /* Space between the image and the text */
-    margin-top: 5vh; /* Optional: add a slight top margin */
-    margin-bottom: 40px; /* Match space below navigation */
+    align-items: center;
+    justify-content: center; /* Center profile horizontally */
+    max-width: 800px;
+    margin: 5vh auto 40px auto; /* Center and add spacing */
+    gap: 20px;
+    flex-wrap: wrap; /* Allows image/text to wrap on smaller screens */
 }
 
-
 .profile img {
-    width: 300px; /* Set a fixed width for the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 300px;
+    height: auto;
 }
 
 .profile-info {
     display: flex;
-    flex-direction: column; /* Stack the name and subheading */
-    gap: 5px; /* Space between name and subheading */
-    text-align: left; /* Ensure text aligns to the left */
+    flex-direction: column;
+    gap: 5px;
+    text-align: center; /* Center name and subheading */
 }
 
-
 .profile-info h2 {
-    margin: 0; /* Remove default margin */
-    font-size: 1.5em; /* Font size for the name */
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
 }
 
 .profile-info .subheading {
-    color: #666; /* Optional: lighter color for subheading */
-    font-size: 1em; /* Font size for the subheading */
+    color: #666;
+    font-size: 1em;
 }
 
-/* Remove background from final project section */
+/* Final Project Section */
 .final-project {
     padding: 2em;
 }
 
-/* Styling for the initial heading and description (matching the other sections and left-aligned) */
 .final-project > h2 {
-    font-size: 1.3em; /* Matches the h2 size in the other sections */
-    color: #333; /* Standard text color */
-    margin-top: 30px; /* Consistent margin above the title */
-    margin-bottom: 10px; /* Consistent margin below the title */
-    text-align: left; /* Align title to the left */
+    font-size: 1.3em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .final-project > p {
-    text-align: left; /* Left-align description */
-    font-size: 1em; /* Matches other sections' description font size */
-    margin-bottom: 2em; /* Bottom margin for spacing */
-    color: #555; /* Standard text color */
+    text-align: left;
+    font-size: 1em;
+    margin-bottom: 2em;
+    color: #555;
 }
 
+/* Portfolio Section */
 #msc-portfolio {
     margin-top: 30px;
 }
 
 .portfolio-container {
-    display: grid; /* Enables CSS Grid */
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Space between the items */
-    justify-items: center; /* Centers items horizontally */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
     margin-top: 20px;
 }
 
 .portfolio-item {
     text-align: center;
     font-size: 12px;
-    max-width: 300px; /* Ensures each item is 300px wide */
+    max-width: 300px;
     margin-bottom: 2em;
 }
 
@@ -228,6 +209,5 @@ h2 {
 }
 
 .portfolio-item p {
-    margin-top: 10px; /* Space between image and description */
+    margin-top: 10px;
 }
-
