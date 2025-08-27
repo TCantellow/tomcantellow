@@ -130,6 +130,14 @@ footer {
     margin: 0 5px; /* Horizontal spacing for span elements */
 }
 
+/*Styling for Profile */
+.profile-info {
+    display: flex;
+    flex-direction: column; /* Stack name and subheading */
+    gap: 5px;               /* Space between name and subheading */
+    text-align: center;      /* Center text just for this profile-info block */
+}
+
 /* Adjusted heading styling for <h2> */
 h2 {
     font-size: 1.3em;
