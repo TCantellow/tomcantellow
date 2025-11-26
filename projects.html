@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
-    <title>Tom Cantellow</title>
-    <meta name="Projects" content="My Projects">
+    <title>Tom Cantellow - Projects</title>
+    <meta name="description" content="My Projects">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="assets/styles.css"> <!-- Link to external stylesheet -->
-    <script src="assets/script.js" defer></script> <!-- Link to external script -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/script.js" defer></script>
+    
     <style>
         .project {
             display: flex;
@@ -50,11 +51,176 @@
             color: #0056b3;
         }
 
-        
+        .final-project {
+            margin-top: 40px;
+        }
+
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .portfolio-item {
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
     </style>
 </head>
 <body>
     <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Energy Efficiency Spatial Typology -->
+        <div class="project">
+            <a href="https://doi.org/10.1177/23998083251377128" target="_blank">
+                <img src="assets/images/EPCs.png" alt="Energy Performance Certificates">
+            </a>
+            <div class="project-content">
+                <h2>A spatial typology of energy (in)efficiency</h2>
+                <p>Published in <i>Environment and Planning B: Urban Analytics and City Science</i>, this journal article explores energy and housing characteristics for private rentals in the UK.</p>
+                <a href="https://doi.org/10.1177/23998083251377128" target="_blank">Article</a>
+            </div>
+        </div>
+
+        <!-- Net Zero Resilience Index -->
+        <div class="project">
+            <a href="https://tcantellow.github.io/netzeroindex/index.html" target="_blank">
+                <img src="assets/images/netzeroindex.png" alt="Net Zero Resilience Index">
+            </a>
+            <div class="project-content">
+                <h2>Net Zero Resilience Index</h2>
+                <p>I developed an index to compare the vulnerability of UK places to green-led economic restructuring.</p>
+                <a href="https://tcantellow.github.io/netzeroindex/index.html" target="_blank">Website</a>
+            </div>
+        </div>
+
+        <!-- The Salt Fringe -->
+        <div class="project">
+            <a href="https://doi.org/10.1002/geo2.70008" target="_blank">
+                <img src="assets/images/saltfringe.png" alt="The Salt Fringe">
+            </a>
+            <div class="project-content">
+                <h2>The Salt Fringe</h2>
+                <p>Published in <i>Geo: Geography and Environment</i>, this journal article explores the energy efficiency of homes in seaside towns.</p>
+                <a href="https://doi.org/10.1002/geo2.70008" target="_blank">Article</a>
+            </div>
+        </div>
+
+        <!-- PhD Thesis -->
+        <div class="project">
+            <a href="https://research-information.bris.ac.uk/en/studentTheses/the-new-divides-of-neoliberalism" target="_blank">
+                <img src="assets/images/phd.png" alt="PhD Thesis">
+            </a>
+            <div class="project-content">
+                <h2>Neoliberalism's 'New Divides'</h2>
+                <p>My PhD thesis explores contemporary inequality and politics in the UK, with a focus on cultural and economic cleavages.</p>
+                <a href="https://research-information.bris.ac.uk/en/studentTheses/the-new-divides-of-neoliberalism" target="_blank">Thesis</a>
+            </div>
+        </div>
+
+        <!-- Retrofitting Rentals -->
+        <div class="project">
+            <a href="https://www.bristol.ac.uk/policybristol/policy-engagement-projects/retrofitting-rentals-bristol/" target="_blank">
+                <img src="assets/images/retrofittingrentals.png" alt="Retrofitting Rentals">
+            </a>
+            <div class="project-content">
+                <h2>Retrofitting Rentals</h2>
+                <p>A project assessing the state of energy efficiency in Bristol's private rental sector.</p>
+                <a href="https://www.bristol.ac.uk/policybristol/policy-engagement-projects/retrofitting-rentals-bristol/" target="_blank">Report</a> |
+                <a href="https://uobristol.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=bdc9bdf0ac9a405fb48e926e461679ed" target="_blank">Map</a>
+            </div>
+        </div>
+
+        <!-- Good Credit Index -->
+        <div class="project">
+            <a href="https://demos.co.uk/research/credit-in-the-cost-of-living-crisis-the-good-credit-index-2023/" target="_blank">
+                <img src="assets/images/goodcreditindex.png" alt="Good Credit Index">
+            </a>
+            <div class="project-content">
+                <h2>Good Credit Index</h2>
+                <p>I produced all maps included in Demos' 2023 Good Credit Index Report.</p>
+                <a href="https://demos.co.uk/research/credit-in-the-cost-of-living-crisis-the-good-credit-index-2023/" target="_blank">Report</a>
+            </div>
+        </div>
+
+        <!-- Cryptoassets Briefing -->
+        <div class="project">
+            <a href="assets/Cryptoassets.pdf" target="_blank">
+                <img src="assets/images/cryptoassets.png" alt="Cryptoassets Briefing">
+            </a>
+            <div class="project-content">
+                <h2>Cryptoassets Briefing</h2>
+                <p>A briefing on Cryptoassets produced during the application process for a 3-month internship with the Home Office's Central Analysis and Insights Team.</p>
+                <a href="assets/Cryptoassets.pdf" target="_blank">Report</a>
+            </div>
+        </div>
+
+        <!-- Master's Dissertation -->
+        <div class="project">
+            <a href="assets/Cantellow_MSc.pdf" target="_blank">
+                <img src="assets/images/NonVoteChange.png" alt="UK NonVote Change">
+            </a>
+            <div class="project-content">
+                <h2>Master's Dissertation</h2>
+                <p>My dissertation, <i>A Spatial Examination of Populism and Absenteeism in the UK in the Context of the 2016 EU Referendum</i>, was submitted in 2018 for my MSc in Applied GIS at the University of Sheffield, and won the Ian Masser Prize for best master's dissertation.</p>
+                <a href="assets/Cantellow_MSc.pdf" target="_blank">Dissertation</a>
+            </div>
+        </div>
+        
+        <!-- Portfolio Section -->
+        <section id="msc-portfolio" class="final-project">
+            <h2>Portfolio</h2>
+            <p>A selection of maps I have produced. Click for full size maps.</p>
+            
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <a href="assets/images/gallery/LondonAlt.png" target="_blank">
+                        <img src="assets/images/gallerythumbs/LondonAlt.png" alt="Map of London">
+                    </a>
+                    <p>A dasymetric map of London's buildings, coloured by the largest ethnic minority of each neighbourhood. Produced as part of my MSc in Applied GIS.</p>
+                </div>
+        
+                <div class="portfolio-item">
+                    <a href="assets/images/gallery/NYCTrees.png" target="_blank">
+                        <img src="assets/images/gallerythumbs/NYCTrees.png" alt="Hexmap of New York City's Trees">
+                    </a>
+                    <p>A hexagon-binned density map of all of New York City's street trees. Produced as part of my MSc in Applied GIS.</p>
+                </div>
+        
+                <div class="portfolio-item">
+                    <a href="assets/images/gallery/Bristol_Age.png" target="_blank">
+                        <img src="assets/images/gallerythumbs/Bristol_Age.png" alt="Building age in Bristol">
+                    </a>
+                    <p>A point map of Bristol's Buildings, visualising their construction date. Produced as part of the Retrofitting Rentals project.</p>
+                </div>
+        
+                <div class="portfolio-item">
+                    <a href="assets/images/gallery/AfghanistanAnimaiton.mp4" target="_blank">
+                        <img src="assets/images/gallerythumbs/AfghanistanAnimation.png" alt="Political Violence in Afghanistan">
+                    </a>
+                    <p>An animated map showing cumulative instances of political violence during the Taliban's takeover of Afghanistan in 2021. Produced using <a href="https://acleddata.com/" target="_blank">ACLED</a> data, for a QGIS workshop delivered to undergraduate students.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script>
         function loadHeader() {
@@ -68,122 +234,5 @@
 
         window.onload = loadHeader;
     </script>
-
-            <div class="project">
-            <a href="https://tcantellow.github.io/netzeroindex/index.html" target="_blank">
-                <img src="assets/images/netzeroindex.png" alt="Net Zero Resilience Index">
-            </a>
-            <div class="project-content">
-                <h2>Net Zero Resilience Index</h2>
-                <p>I developed an index to compare the vulnerability of UK places to green-led economic restructuring.</p>
-                <a href="https://tcantellow.github.io/netzeroindex/index.html" target="_blank">Website</a>
-            </div>
-        </div>
-
-    <main>
-        <div class="project">
-            <a href="https://doi.org/10.1002/geo2.70008" target="_blank">
-                <img src="assets/images/saltfringe.png" alt="The Salt Fringe">
-            </a>
-            <div class="project-content">
-                <h2>The Salt Fringe</h2>
-                <p>Published in <i>Geo: Geography and Environment</i>, this journal article explores the energy efficiency of homes in seaside towns.</p>
-                <a href="https://doi.org/10.1002/geo2.70008" target="_blank">Article</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <a href="#" target="_blank">
-                <img src="assets/images/phd.png" alt="PhD Thesis">
-            </a>
-            <div class="project-content">
-                <h2>Neoliberalism's 'New Divides'</h2>
-                <p>My PhD thesis explores contemporary inequality and politics in the UK, with a focus on cultural and economic cleavages.</p>
-                <a href="https://research-information.bris.ac.uk/en/studentTheses/the-new-divides-of-neoliberalism" target="_blank">Thesis</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <a href="https://www.bristol.ac.uk/policybristol/policy-engagement-projects/retrofitting-rentals-bristol/" target="_blank">
-                <img src="assets/images/retrofittingrentals.png" alt="Retrofitting Rentals">
-            </a>
-            <div class="project-content">
-                <h2>Retrofitting Rentals</h2>
-                <p>A project assessing the state of energy efficiency in Bristol's private rental sector.</p>
-                <a href="https://www.bristol.ac.uk/policybristol/policy-engagement-projects/retrofitting-rentals-bristol/" target="_blank">Report</a> |
-                <a href="https://uobristol.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=bdc9bdf0ac9a405fb48e926e461679ed" target="_blank">Map</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <a href="https://demos.co.uk/research/credit-in-the-cost-of-living-crisis-the-good-credit-index-2023/" target="_blank">
-                <img src="assets/images/goodcreditindex.png" alt="Good Credit Index">
-            </a>
-            <div class="project-content">
-                <h2>Good Credit Index</h2>
-                <p>I produced all maps included in Demos' 2023 Good Credit Index Report.</p>
-                <a href="https://demos.co.uk/research/credit-in-the-cost-of-living-crisis-the-good-credit-index-2023/" target="_blank">Report</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <a href="assets/cryptoassets.pdf" target="_blank">
-                <img src="assets/images/cryptoassets.png" alt="Cryptoassets Briefing">
-            </a>
-            <div class="project-content">
-                <h2>Cryptoassets Briefing</h2>
-                <p>A briefing on Cryptoassets produced during the application process for a 3-month internship with the Home Office's Central Analysis and Insights Team.</p>
-                <a href="assets/Cryptoassets.pdf" target="_blank">Report</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <a href="#" target="_blank">
-                <img src="assets/images/NonVoteChange.png" alt="UK NonVote Change">
-            </a>
-            <div class="project-content">
-                <h2>Master's Dissertation</h2>
-                <p>My dissertation, <i>A Spatial Examination of Populism and Absenteeism in the UK in the Context of the 2016 EU Referendum</i>, was submitted in 2018 for my MSc in Applied GIS at the University of Sheffield, and won the Ian Masser Prize for best master's dissertation.</p>
-                <a href="assets/Cantellow_MSc.pdf" target="_blank">Dissertation</a>
-            </div>
-        </div>
-        
-        <section id="msc-portfolio" class="final-project">
-            <h2>Portfolio</h2>
-            <p>A selection of maps I have produced. Click for full size maps.</p>
-            
-                <div class="portfolio-container">
-                    <div class="portfolio-item">
-                        <a href="assets/images/gallery/LondonAlt.png" target="_blank">
-                            <img src="assets/images/gallerythumbs/LondonAlt.png" alt="Map of London">
-                        </a>
-                        <p>A dasymetric map of London's buildings, coloured by the largest ethnic minority of each neighbourhood. Produced as part of my MSc in Applied GIS.</p>
-                    </div>
-            
-                    <div class="portfolio-item">
-                        <a href="assets/images/gallery/NYCTrees.png" target="_blank">
-                            <img src="assets/images/gallerythumbs/NYCTrees.png" alt="Hexmap of New York City's Trees">
-                        </a>
-                        <p>A hexagon-binned density map of all of New York City's street trees. Produced as part of my MSc in Applied GIS.</p>
-                    </div>
-            
-                    <div class="portfolio-item">
-                        <a href="assets/images/gallery/Bristol_Age.png" target="_blank">
-                            <img src="assets/images/gallerythumbs/Bristol_Age.png" alt="Building age in Bristol">
-                        </a>
-                        <p>A point map of Bristol's Buildings, visualising their construction date. Produced as part of the Retrofitting Rentals project.</p>
-                    </div>
-            
-                    <div class="portfolio-item">
-                        <a href="assets/images/gallery/AfghanistanAnimaiton.mp4" target="_blank">
-                            <img src="assets/images/gallerythumbs/AfghanistanAnimation.png" alt="Political Violence in Afghanistan">
-                        </a>
-                        <p>An animated map showing culmulative instances of poltiical violence during the Taliban's takeover of Afghanistan in 2021. Produced using <a href="https://acleddata.com/" target="_blank">ACLED </a> data, for a QGIS workshop delivered to undergraduate students.</p>
-                    </div>
-                </div>
-            </section>
-            
-        </section>
-    </main>
 </body>
 </html>
