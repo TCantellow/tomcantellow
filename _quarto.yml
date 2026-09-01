@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "Tom Cantellow"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: resources.qmd
+        text: Resources
+
+format:
+  html:
+    theme: none
+    css: assets/styles.css
+    toc: false
