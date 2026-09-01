@@ -5,24 +5,35 @@ website:
   title: "Tom Cantellow"
 
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
+    right:
       - href: projects.qmd
         text: Projects
+
       - href: resources.qmd
         text: Resources
 
-    right:
       - text: CV
         href: assets/CV.pdf
-      - text: LinkedIn
-        href: https://www.linkedin.com/in/tomcantellow/
+
       - text: Contact
         href: mailto:tcantellow@gmail.com
 
+      - icon: linkedin
+        href: https://www.linkedin.com/in/tomcantellow/
+        aria-label: LinkedIn
+
 format:
   html:
-    theme: none
+    theme:
+      light: cosmo
+      dark: darkly
     css: assets/styles.css
     toc: false
+    smooth-scroll: true
+
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>

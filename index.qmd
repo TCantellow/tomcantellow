@@ -1,20 +1,20 @@
 ---
 title: "Tom Cantellow"
-description: "Tom Cantellow's professional portfolio"
 ---
 
-::: {.profile}
-![Photo of Tom Cantellow](assets/images/cantellow.png)
+::::: hero
+::: hero-text
+# Data Scientist & Policy Analyst
 
-::: {.profile-info}
-## Tom Cantellow
+PhD, Quantitative Human Geography\
+Politics, Economics, Geography
 
-Policy & Data Analyst  
-PhD, Quantitative Human Geography  
-Housing, Politics, Economics & Net Zero
+I use data science to study the economy, society, and politics of Britain. Currently at Defra applying these methods to policy challenges.
+
+Available to consult and collaborate on map production, data analysis, and more. [Get in touch.](mailto:tcantellow@gmail.com)
 :::
+
+::: hero-image
+![](assets/images/cantellow.jpg)
 :::
-
-I am a researcher interested in the economy, society, and politics of Britain. I use data science and quantitative methodologies to analyse inequality, housing, energy efficiency, voting, personal finance, and local economies.
-
-I am available to consult, collaborate, and educate on map production, data analysis, survey design, and many other topics. [Get in touch.](mailto:tcantellow@gmail.com)
+:::::

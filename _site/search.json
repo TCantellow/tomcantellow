@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "A collection of things I’ve found useful, interesting, or good. A mixture of tools, books, datasets, tutorials, and rabbit holes."
+  },
+  {
+    "objectID": "resources.html#recommended",
+    "href": "resources.html#recommended",
+    "title": "Resources",
+    "section": "Recommended",
+    "text": "Recommended\nTwo awesome curated lists of lists of free software and data:\n\n⭐ Free Lunch\n⭐ Awesome Public Datasets"
+  },
+  {
+    "objectID": "resources.html#things-to-use",
+    "href": "resources.html#things-to-use",
+    "title": "Resources",
+    "section": "Things to use",
+    "text": "Things to use\n\nTools and utilities\n\n⭐ ColorSpace - Create colour palettes online.\n⭐ Cycle.Travel - A bicycle route planner built around quieter roads.\n⭐ Windy - Beautiful weather maps.\nThe Bike Market - A great tool for checking pricing on used motorcycles across the UK market.\nNinety 180 - Visualise post-Brexit EU stay days.\nDiskPrices - Compare the cost of digital storage.\nRadio Garden - Live radio stations from around the world.\nUpscayl - Open source AI image upscaler. \n\n\n\nThings to play with\n\n⭐ Lakera Agent Breaker - Teaches you to hack AI.\n⭐ Data Viz Project - A catalogue of visualisation types, useful when you know what you want to say but not what shape it should take.\n⭐ Learn Git Branching - Learn Git branching. \nSQL Murder Mystery - Learn SQL by solving a murder. \nGoogle Dataset Search - Search for datasets across the web.\nExplainShell - Paste in ugly SQL, get a breakdown of what every flag does. \nW3Schools SQL Tutorial - Beginner SQL guide.\nSQLFormat - Paste in ugly SQL, get tidy SQL back.\nMockaroo - Generate realistic synthetic data.\nTableConvert - Convert tables between formats. CSV to Markdown, JSON to SQL, and most combinations you’d need.\nExcel Practice Online - Free Excel exercises.\n\n\n\nSelf-hosted\n\n⭐ Immich - Google Photos alternative. \nProject Nomad - An offline knowledge server. \nActual Budget - Personal finance software. \nDocumenso - Docusign alternative. \nMeetily - Granola alternative. \nFluidVoice - Dictation. \nOpenCut - Capcut alternative. \nopenGym - Workout tracking."
+  },
+  {
+    "objectID": "resources.html#things-to-learn-from",
+    "href": "resources.html#things-to-learn-from",
+    "title": "Resources",
+    "section": "Things to learn from",
+    "text": "Things to learn from\n\nIntroductory guides to R and data science\n\n⭐ R for Data Science - Hands-on guide to data science with R. \n⭐ Introduction to Statistical Learning - Foundational machine learning textbook.\n⭐ Fundamentals of Data Visualisation - Comprehensive visualisation concepts. \nJust Enough R - Concise intro to R for beginners.\nVirgilio - “Your new Mentor for Data Science E-Learning.”\nYaRrr! The Pirate’s Guide to R - Accessible R programming guide.\nThe Big Book of R - “Your last-ever R-related bookmark.”\nStatistical Rethinking - Key applied statistics textbook. \nStatistical Rethinking Recoded - Recoded exercises from the book.\nPython for Data Analysis - Python textbook. \n\n\n\nAdvanced R and statistical modelling\n\n⭐ Beyond Multiple Linear Regression - For when ordinary regression stops being enough. \n⭐ Applied Regression and Multilevel Models - Guide to regression and multilevel models.\nAdvanced R - Deep dive into R programming. \nModels by Example - Practical statistical modeling examples. \nMultilevel Model Overview - Introductory video on multilevel models.\nIntroduction to Multilevel Models - Tutorial for multilevel models in R.\nMultilevel Model Specification - Detailed model specification.\nMultilevel Model Bootcamp - Comprehensive workshop material.\nNested Data Analysis - Video on nested data analysis.\nMultilevel Models and Clustering - Guide on clustering methods.\nHierarchical Clustering on Categorical Data in R - Introduction to hierarchical clustering.\nHierarchical Models in R - In-depth look at hierarchical models.\nAllFit - Tool for evaluating multilevel models.\nLongitudinal Data Analysis - Methods for data that changes over time.\nStatistical Modeling, Causal Inference, and Social Science - Blog by Andrew Gelman.\n\n\n\nGeographic data science\n\n⭐ Geographic Data Science - Intro to geographic data science in Python.\nGeocomputation with R - Advanced geospatial data analysis. \nGeographic Data Science Course - Additional course on geographic data science.\nMapping and Modelling Geographic Data in R - Mixed-methods spatial modeling.\nSpatial Causal Inference - Spatial analysis and causal inference.\nSpatial Statistics for Data Science - Spatial statistics with R.\nSpatial Microsimulation - Techniques in spatial microsimulation. \nUrban Analytics and City Science - Guide to urban data analysis.\nData Science for Transport Planning - Open source resource list for course at Leeds University.\nFree GIS Data - A huge, well-maintained collection of free GIS datasets and data sources.\nEsri GIS Blog - Tutorials and GIS resources.\nQGIS User Group - Flickr community for QGIS projects.\nHelenMakesMaps - Tutorials and GIS advocacy."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tom Cantellow",
+    "section": "",
+    "text": "Data Scientist & Policy Analyst\nPhD, Quantitative Human Geography\nPolitics, Economics, Geography\nI use data science to study the economy, society, and politics of Britain. Currently at Defra applying these methods to policy challenges.\nAvailable to consult and collaborate on map production, data analysis, and more. Get in touch.\n\n\n\n\n\nPhotograph of Tom Cantellow"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Net Zero Vulnerability Index\n\n\n\n\nI developed an index to compare the vulnerability of UK regions to green economic restructuring.\n\nWebsite · Article\n\n\n\n\n\n\n\nA spatial typology of energy (in)efficiency\n\n\n\n\nPublished in Environment and Planning B: Urban Analytics and City Science, this journal article explores energy and housing characteristics for private rentals in the UK.\n\nArticle\n\n\n\n\n\n\n\nThe Salt Fringe\n\n\n\n\nPublished in Geo: Geography and Environment, this journal article explores the energy efficiency of homes in seaside towns.\n\nArticle\n\n\n\n\n\n\n\nNeoliberalism’s New Divides\n\n\n\n\nMy PhD thesis explores contemporary inequality and politics in the UK, with a focus on cultural and economic cleavages.\n\nThesis\n\n\n\n\n\n\n\nRetrofitting Rentals\n\n\n\n\nA project assessing the state of energy efficiency in Bristol’s private rental sector.\n\nReport · Map\n\n\n\n\n\n\n\nGood Credit Index\n\n\n\n\nI produced all maps included in Demos’ 2023 Good Credit Index Report.\n\nReport\n\n\n\n\n\n\n\nCryptoassets Briefing\n\n\n\n\nA briefing on Cryptoassets produced during the application process for a 3-month internship with the Home Office’s Central Analysis and Insights Team.\n\nReport\n\n\n\n\n\n\n\nMaster’s Dissertation\n\n\n\n\nA Spatial Examination of Populism and Absenteeism in the UK in the Context of the 2016 EU Referendum — submitted 2018 for my MSc in Applied GIS at the University of Sheffield, winner of the Ian Masser Prize for best master’s dissertation.\n\nDissertation"
+  },
+  {
+    "objectID": "projects.html#portfolio",
+    "href": "projects.html#portfolio",
+    "title": "Projects",
+    "section": "Portfolio",
+    "text": "Portfolio\nA selection of maps I have produced. Click for full size maps.\n\n\n\n\n\nMap of London\n\n\nA dasymetric map of London’s buildings, coloured by the largest ethnic minority of each neighbourhood. Produced as part of my MSc in Applied GIS.\n\n\n\n\n\nHexmap of New York City’s Trees\n\n\nA hexagon-binned density map of all of New York City’s street trees. Produced as part of my MSc in Applied GIS.\n\n\n\n\n\nBuilding age in Bristol\n\n\nA point map of Bristol’s Buildings, visualising their construction date. Produced as part of the Retrofitting Rentals project.\n\n\n\n\n\nPolitical Violence in Afghanistan\n\n\nAn animated map showing cumulative instances of political violence during the Taliban’s takeover of Afghanistan in 2021. Produced using ACLED data, for a QGIS workshop delivered to undergraduate students."
+  }
+]

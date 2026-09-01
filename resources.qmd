@@ -1,8 +1,104 @@
 ---
 title: "Resources"
+toc: true
+toc-title: "On this page"
+toc-location: left
+toc-depth: 4
+toc-expand: true
 ---
 
-# Resources
+A collection of things I've found useful, interesting, or good. A mixture of tools, books, datasets, tutorials, and rabbit holes.
 
-This page is being migrated from the original HTML site to Quarto.
+## Recommended
 
+Two *awesome* curated lists of lists of free software and data:
+
+- ⭐ [Free Lunch](https://github.com/auctors/free-lunch)
+- ⭐ [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
+
+## Things to use
+
+### Tools and utilities
+
+- ⭐ [ColorSpace](https://mycolor.space/) - Create colour palettes online.
+- ⭐ [Cycle.Travel](https://cycle.travel/) - A bicycle route planner built around quieter roads.
+- ⭐ [Windy](https://www.windy.com/) - Beautiful weather maps.
+- [The Bike Market](https://www.thebikemarket.co.uk/) - A great tool for checking pricing on used motorcycles across the UK market.
+- [Ninety 180](https://ninety180.com/) - Visualise post-Brexit EU stay days.
+- [DiskPrices](https://diskprices.com/?locale=uk) - Compare the cost of digital storage.
+- [Radio Garden](https://radio.garden) - Live radio stations from around the world.
+- [Upscayl](https://upscayl.org/) - Open source AI image upscaler. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/upscayl/upscayl)
+
+### Things to play with
+
+- ⭐ [Lakera Agent Breaker](https://play.lakera.ai/agent-breaker) - Teaches you to hack AI.
+- ⭐ [Data Viz Project](https://datavizproject.com/) - A catalogue of visualisation types, useful when you know what you want to say but not what shape it should take.
+- ⭐ [Learn Git Branching](https://learngitbranching.js.org/) - Learn Git branching. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/pcottle/learnGitBranching)
+- [SQL Murder Mystery](https://mystery.knightlab.com/) - Learn SQL by solving a murder. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/NUKnightLab/sql-mysteries)
+- [Google Dataset Search](https://datasetsearch.research.google.com/) - Search for datasets across the web.
+- [ExplainShell](https://explainshell.com/) - Paste in ugly SQL, get a breakdown of what every flag does. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/idank/explainshell)
+- [W3Schools SQL Tutorial](https://w3schools.com/sql/) - Beginner SQL guide.
+- [SQLFormat](https://sqlformat.org/) - Paste in ugly SQL, get tidy SQL back.
+- [Mockaroo](https://www.mockaroo.com/) - Generate realistic synthetic data.
+- [TableConvert](https://tableconvert.com/) - Convert tables between formats. CSV to Markdown, JSON to SQL, and most combinations you'd need.
+- [Excel Practice Online](https://excel-practice-online.com/) - Free Excel exercises.
+
+### Self-hosted
+
+- ⭐ [Immich](https://immich.app/) - Google Photos alternative. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/immich-app/immich)
+- [Project Nomad](https://www.projectnomad.us/) - An offline knowledge server. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/Crosstalk-Solutions/project-nomad)
+- [Actual Budget](https://actualbudget.org/) - Personal finance software. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/actualbudget/actual)
+- [Documenso](https://documenso.com/) - Docusign alternative. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/documenso/documenso)
+- [Meetily](https://github.com/Zackriya-Solutions/meetily) - Granola alternative. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/Zackriya-Solutions/meetily)
+- [FluidVoice](https://github.com/altic-dev/FluidVoice) - Dictation. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/altic-dev/FluidVoice)
+- [OpenCut](https://github.com/opencut-app/opencut) - Capcut alternative. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/opencut-app/OpenCut)
+- [openGym](https://github.com/arvids-unavailable/openGym) - Workout tracking. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/arvids-unavailable/openGym)
+
+## Things to learn from
+
+### Introductory guides to R and data science
+
+- ⭐ [R for Data Science](https://r4ds.had.co.nz/) - Hands-on guide to data science with R. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/hadley/r4ds)
+- ⭐ [Introduction to Statistical Learning](https://www.statlearning.com/) - Foundational machine learning textbook.
+- ⭐ [Fundamentals of Data Visualisation](https://clauswilke.com/dataviz/index.html) - Comprehensive visualisation concepts. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/clauswilke/dataviz)
+- [Just Enough R](https://benwhalley.github.io/just-enough-r/) - Concise intro to R for beginners.
+- [Virgilio](https://virgili0.github.io/Virgilio/) - "Your new Mentor for Data Science E-Learning."
+- [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/) - Accessible R programming guide.
+- [The Big Book of R](https://www.bigbookofr.com/) - "Your last-ever R-related bookmark."
+- [Statistical Rethinking](https://xcelab.net/rm/) - Key applied statistics textbook. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/rmcelreath/rethinking)
+- [Statistical Rethinking Recoded](https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/) - Recoded exercises from the book.
+- [Python for Data Analysis](https://wesmckinney.com/book/) - Python textbook. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/wesm/pydata-book)
+
+### Advanced R and statistical modelling
+
+- ⭐ [Beyond Multiple Linear Regression](https://bookdown.org/roback/bookdown-BeyondMLR) - For when ordinary regression stops being enough. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/proback/BeyondMLR)
+- ⭐ [Applied Regression and Multilevel Models](http://www.stat.columbia.edu/~gelman/arm/) - Guide to regression and multilevel models.
+- [Advanced R](http://adv-r.had.co.nz/) - Deep dive into R programming. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/hadley/adv-r)
+- [Models by Example](https://m-clark.github.io/models-by-example/) - Practical statistical modeling examples. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/m-clark/ModelsByExample)
+- [Multilevel Model Overview](https://www.youtube.com/watch?v=QeCJ9ON0WDc) - Introductory video on multilevel models.
+- [Introduction to Multilevel Models](https://rpubs.com/corey_sparks/70812) - Tutorial for multilevel models in R.
+- [Multilevel Model Specification](http://www.rensenieuwenhuis.nl/r-sessions-16-multilevel-model-specification-lme4/) - Detailed model specification.
+- [Multilevel Model Bootcamp](https://quantdev.ssri.psu.edu/tutorials/r-bootcamp-introduction-multilevel-model-and-interactions) - Comprehensive workshop material.
+- [Nested Data Analysis](https://www.youtube.com/watch?v=boPyjojYHUY) - Video on nested data analysis.
+- [Multilevel Models and Clustering](https://www.youtube.com/watch?v=Yqf91pPzkU4) - Guide on clustering methods.
+- [Hierarchical Clustering on Categorical Data in R](https://towardsdatascience.com/hierarchical-clustering-on-categorical-data-in-r-a27e578f2995) - Introduction to hierarchical clustering.
+- [Hierarchical Models in R](https://rstudio-pubs-static.s3.amazonaws.com/33653_57fc7b8e5d484c909b615d8633c01d51.html) - In-depth look at hierarchical models.
+- [AllFit](https://joshua-nugent.github.io/allFit/) - Tool for evaluating multilevel models.
+- [Longitudinal Data Analysis](https://advstats.psychstat.org/book/longitudinal/index.php) - Methods for data that changes over time.
+- [Statistical Modeling, Causal Inference, and Social Science](https://statmodeling.stat.columbia.edu/) - Blog by Andrew Gelman.
+
+### Geographic data science
+
+- ⭐ [Geographic Data Science](https://geographicdata.science/book/) - Intro to geographic data science in Python.
+- [Geocomputation with R](https://geocompr.robinlovelace.net/index.html) - Advanced geospatial data analysis. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/geocompx/geocompr)
+- [Geographic Data Science Course](https://darribas.org/gds_course/content/home.html) - Additional course on geographic data science.
+- [Mapping and Modelling Geographic Data in R](https://profrichharris.github.io/MandM/) - Mixed-methods spatial modeling.
+- [Spatial Causal Inference](https://spatialcausal.org/) - Spatial analysis and causal inference.
+- [Spatial Statistics for Data Science](https://www.paulamoraga.com/book-spatial/) - Spatial statistics with R.
+- [Spatial Microsimulation](https://spatial-microsim-book.robinlovelace.net/) - Techniques in spatial microsimulation. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/Robinlovelace/spatial-microsim)
+- [Urban Analytics and City Science](https://etranos.info/urban_analytics_city_science/) - Guide to urban data analysis.
+- [Data Science for Transport Planning](https://tdscience.github.io/dstp/) - Open source resource list for course at Leeds University.
+- [Free GIS Data](https://freegisdata.rtwilson.com/) - A huge, well-maintained collection of free GIS datasets and data sources.
+- [Esri GIS Blog](https://www.esri.com/arcgis-blog/author/j_nelson/) - Tutorials and GIS resources.
+- [QGIS User Group](https://www.flickr.com/groups/qgis/pool) - Flickr community for QGIS projects.
+- [HelenMakesMaps](https://www.helenmakesmaps.com/blog) - Tutorials and GIS advocacy.
