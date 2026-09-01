@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Tom Cantellow"
+
   navbar:
     left:
       - href: index.qmd
@@ -11,6 +12,14 @@ website:
         text: Projects
       - href: resources.qmd
         text: Resources
+
+    right:
+      - text: CV
+        href: assets/CV.pdf
+      - text: LinkedIn
+        href: https://www.linkedin.com/in/tomcantellow/
+      - text: Contact
+        href: mailto:tcantellow@gmail.com
 
 format:
   html:
