@@ -1,20 +1,25 @@
 ---
-title: "Tom Cantellow"
+title: ""
 ---
 
 ::::: hero
-::: hero-text
-# Data Scientist & Policy Analyst
-
-PhD, Quantitative Human Geography\
-Politics, Economics, Geography
-
-I use data science to study the economy, society, and politics of Britain. Currently at Defra applying these methods to policy challenges.
-
-Available to consult and collaborate on map production, data analysis, and more. [Get in touch.](mailto:tcantellow@gmail.com)
+::: hero-image
+![](assets/images/cantellow.jpg){fig-alt="Photo of Tom Cantellow"}
 :::
 
-::: hero-image
-![](assets/images/cantellow.jpg)
+::: hero-intro
+# Tom Cantellow
+
+### Data Scientist & Policy Analyst
+
+PhD, Quantitative Human Geography
+
+Politics | Economics | Geography
 :::
 :::::
+
+::: hero-description
+I use data science to study the economy, society, and politics of Britain. I'm currently working at Defra applying these methods to policy challenges.
+
+I'm available to consult and collaborate on map production, data analysis, and more. [Get in touch.](mailto:tcantellow@gmail.com)
+:::

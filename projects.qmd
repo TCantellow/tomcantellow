@@ -6,7 +6,7 @@ title: "Projects"
 
 ::: {.project-card}
 
-[![Net Zero Vulnerability Index](assets/images/netzeroindex.png)](https://tcantellow.github.io/netzeroindex/index.html)
+[![Net Zero Vulnerability Index](assets/images/netzeroindex.jpg)](https://tcantellow.github.io/netzeroindex/index.html)
 
 ::: {.project-card-body}
 
@@ -24,7 +24,7 @@ I developed an index to compare the vulnerability of UK regions to green economi
 
 ::: {.project-card}
 
-[![A spatial typology of energy (in)efficiency](assets/images/EPCs.png)](https://doi.org/10.1177/23998083251377128)
+[![A spatial typology of energy (in)efficiency](assets/images/EPCs.jpg)](https://doi.org/10.1177/23998083251377128)
 
 ::: {.project-card-body}
 
@@ -42,7 +42,7 @@ Published in *Environment and Planning B: Urban Analytics and City Science*, thi
 
 ::: {.project-card}
 
-[![The Salt Fringe](assets/images/saltfringe.png)](https://doi.org/10.1002/geo2.70008)
+[![The Salt Fringe](assets/images/saltfringe.jpg)](https://doi.org/10.1002/geo2.70008)
 
 ::: {.project-card-body}
 
@@ -60,7 +60,7 @@ Published in *Geo: Geography and Environment*, this journal article explores the
 
 ::: {.project-card}
 
-[![Neoliberalism's New Divides](assets/images/phd.png)](https://research-information.bris.ac.uk/en/studentTheses/the-new-divides-of-neoliberalism)
+[![Neoliberalism's New Divides](assets/images/phd.jpg)](https://research-information.bris.ac.uk/en/studentTheses/the-new-divides-of-neoliberalism)
 
 ::: {.project-card-body}
 
@@ -78,7 +78,7 @@ My PhD thesis explores contemporary inequality and politics in the UK, with a fo
 
 ::: {.project-card}
 
-[![Retrofitting Rentals](assets/images/retrofittingrentals.png)](https://www.bristol.ac.uk/policybristol/policy-engagement-projects/retrofitting-rentals-bristol/)
+[![Retrofitting Rentals](assets/images/retrofittingrentals.jpg)](https://www.bristol.ac.uk/policybristol/policy-engagement-projects/retrofitting-rentals-bristol/)
 
 ::: {.project-card-body}
 
@@ -96,7 +96,7 @@ A project assessing the state of energy efficiency in Bristol's private rental s
 
 ::: {.project-card}
 
-[![Good Credit Index](assets/images/goodcreditindex.png)](https://demos.co.uk/research/credit-in-the-cost-of-living-crisis-the-good-credit-index-2023/)
+[![Good Credit Index](assets/images/goodcreditindex.jpg)](https://demos.co.uk/research/credit-in-the-cost-of-living-crisis-the-good-credit-index-2023/)
 
 ::: {.project-card-body}
 
@@ -114,7 +114,7 @@ I produced all maps included in Demos' 2023 Good Credit Index Report.
 
 ::: {.project-card}
 
-[![Cryptoassets Briefing](assets/images/cryptoassets.png)](assets/Cryptoassets.pdf)
+[![Cryptoassets Briefing](assets/images/cryptoassets.jpg)](assets/Cryptoassets.pdf)
 
 ::: {.project-card-body}
 
@@ -132,7 +132,7 @@ A briefing on Cryptoassets produced during the application process for a 3-month
 
 ::: {.project-card}
 
-[![Master's Dissertation](assets/images/NonVoteChange.png)](assets/Cantellow_MSc.pdf)
+[![Master's Dissertation](assets/images/brexit.jpg)](assets/Cantellow_MSc.pdf)
 
 ::: {.project-card-body}
 
@@ -149,6 +149,7 @@ A briefing on Cryptoassets produced during the application process for a 3-month
 :::
 
 :::
+
 
 ## Portfolio
 
