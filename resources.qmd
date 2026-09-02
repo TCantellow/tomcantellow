@@ -62,6 +62,7 @@ Two *awesome* curated lists of lists of free software and data:
 - ⭐ [Introduction to Statistical Learning](https://www.statlearning.com/) - Foundational machine learning textbook.
 - ⭐ [Fundamentals of Data Visualisation](https://clauswilke.com/dataviz/index.html) - Comprehensive visualisation concepts. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/clauswilke/dataviz)
 - [Just Enough R](https://benwhalley.github.io/just-enough-r/) - Concise intro to R for beginners.
+- [What They Forgot to Teach You Abour T](https://rstats.wtf/) - Things to know about using R that aren't data analysis.
 - [Virgilio](https://virgili0.github.io/Virgilio/) - "Your new Mentor for Data Science E-Learning."
 - [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/) - Accessible R programming guide.
 - [The Big Book of R](https://www.bigbookofr.com/) - "Your last-ever R-related bookmark."

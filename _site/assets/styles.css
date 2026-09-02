@@ -4,6 +4,14 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
+html {
+    overflow-y: scroll;
+}
+
+body:not(.floating) .page-columns .content {
+    grid-column: screen-start / screen-end;
+}
+
 #quarto-content {
     width: 100%;
 }
@@ -95,11 +103,12 @@ a:hover {
 
 .hero {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 300px 300px;
     grid-template-rows: auto auto;
     column-gap: 1.5rem;
     row-gap: 0;
-    max-width: 900px;
+    width: max-content;
+    max-width: 100%;
     margin: 4rem auto 0;
     align-items: end;
 }
@@ -152,7 +161,9 @@ a:hover {
 .hero-description {
     grid-column: 1 / -1;
     grid-row: 2;
-    margin-top: 2.5rem;
+    width: 615px;
+    max-width: 100%;
+    margin: 2.5rem auto 0;
     font-size: 0.95rem;
     line-height: 1.7;
 }
@@ -166,7 +177,7 @@ a:hover {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
     width: 100%;
     margin-top: 2rem;
@@ -256,9 +267,8 @@ a:hover {
     text-underline-offset: 3px;
 }
 
-.project-grid + h2 {
+.project-grid + section {
     margin-top: 6rem;
-    margin-left: 0;
 }
 
 
@@ -266,7 +276,7 @@ a:hover {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     column-gap: 1rem;
     row-gap: 2rem;
     width: 100%;
@@ -342,6 +352,23 @@ figure img:hover {
 }
 
 
+/* CV */
+
+.cv-embed {
+    width: 100%;
+    height: 85vh;
+    margin-top: 1rem;
+}
+
+.cv-embed embed {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 10px;
+}
+
+
 /* CARDS */
 
 .card {
@@ -402,20 +429,6 @@ figure img:hover {
     color: white;
 }
 
-
-/* TABLET */
-
-@media (max-width: 1000px) {
-    .project-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .portfolio-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-
 /* MOBILE */
 
 @media (max-width: 700px) {
@@ -451,16 +464,17 @@ figure img:hover {
     .hero-intro h1 {
         font-size: 2.25rem;
     }
-
+    
     .hero-description {
-        grid-column: 1;
-        grid-row: 3;
-        margin-top: 0.5rem;
-        text-align: left;
+      grid-column: 1 / -1;
+      grid-row: 2;
+      max-width: 640px;
+      margin: 2.5rem auto 0;
+      font-size: 0.95rem;
+      line-height: 1.7;
     }
 
     .project-grid {
-        grid-template-columns: 1fr;
         gap: 1.25rem;
     }
 
@@ -469,7 +483,6 @@ figure img:hover {
     }
 
     .portfolio-container {
-        grid-template-columns: 1fr;
         gap: 2.5rem;
         margin-top: 2rem;
     }
@@ -483,7 +496,7 @@ figure img:hover {
         height: auto;
     }
 
-    .project-grid + h2 {
+    .project-grid + section {
         margin-top: 4rem;
     }
 }

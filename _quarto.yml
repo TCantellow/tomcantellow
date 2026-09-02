@@ -1,19 +1,23 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "Tom Cantellow"
-
   navbar:
+    title: "Tom Cantellow"
+
     right:
+      - href: index.qmd
+        text: Home
+
       - href: projects.qmd
         text: Projects
 
       - href: resources.qmd
         text: Resources
 
-      - text: CV
-        href: assets/CV.pdf
+      - href: cv.qmd
+        text: CV
 
       - text: Contact
         href: mailto:tcantellow@gmail.com
