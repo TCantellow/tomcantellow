@@ -43,17 +43,6 @@ Two *awesome* curated lists of lists of free software and data:
 - [TableConvert](https://tableconvert.com/) - Convert tables between formats. CSV to Markdown, JSON to SQL, and most combinations you'd need.
 - [Excel Practice Online](https://excel-practice-online.com/) - Free Excel exercises.
 
-### Self-hosted / Open Source
-
-- ⭐ [Immich](https://immich.app/) - Google Photos alternative. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/immich-app/immich)
-- [Project Nomad](https://www.projectnomad.us/) - An offline knowledge server. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/Crosstalk-Solutions/project-nomad)
-- [Actual Budget](https://actualbudget.org/) - Personal finance software. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/actualbudget/actual)
-- [Documenso](https://documenso.com/) - Docusign alternative. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/documenso/documenso)
-- [Meetily](https://github.com/Zackriya-Solutions/meetily) - Granola alternative. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/Zackriya-Solutions/meetily)
-- [FluidVoice](https://github.com/altic-dev/FluidVoice) - Dictation. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/altic-dev/FluidVoice)
-- [OpenCut](https://github.com/opencut-app/opencut) - Capcut alternative. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/opencut-app/OpenCut)
-- [openGym](https://github.com/arvids-unavailable/openGym) - Workout tracking. [<iconify-icon icon="carbon:logo-github" aria-label="GitHub"></iconify-icon>](https://github.com/arvids-unavailable/openGym)
-
 ## Things to learn from
 
 ### Introductory guides to R and data science
